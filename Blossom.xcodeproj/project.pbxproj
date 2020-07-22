@@ -15,6 +15,9 @@
 		29027EEC24C8C23C00AD8774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29027EEA24C8C23C00AD8774 /* LaunchScreen.storyboard */; };
 		29027EF724C8C23C00AD8774 /* BlossomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027EF624C8C23C00AD8774 /* BlossomTests.swift */; };
 		29027F0224C8C23C00AD8774 /* BlossomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F0124C8C23C00AD8774 /* BlossomUITests.swift */; };
+		29027F1024C8C7D400AD8774 /* DiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */; };
+		29027F1224C8CA7000AD8774 /* IdentifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F1124C8CA7000AD8774 /* IdentifyView.swift */; };
+		29027F1424C8CAAB00AD8774 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F1324C8CAAB00AD8774 /* ShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		29027EFD24C8C23C00AD8774 /* BlossomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlossomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29027F0124C8C23C00AD8774 /* BlossomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlossomUITests.swift; sourceTree = "<group>"; };
 		29027F0324C8C23C00AD8774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisView.swift; sourceTree = "<group>"; };
+		29027F1124C8CA7000AD8774 /* IdentifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyView.swift; sourceTree = "<group>"; };
+		29027F1324C8CAAB00AD8774 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				29027EDF24C8C23900AD8774 /* AppDelegate.swift */,
 				29027EE124C8C23900AD8774 /* SceneDelegate.swift */,
 				29027EE324C8C23900AD8774 /* ContentView.swift */,
+				29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */,
+				29027F1124C8CA7000AD8774 /* IdentifyView.swift */,
+				29027F1324C8CAAB00AD8774 /* ShareView.swift */,
 				29027EE524C8C23C00AD8774 /* Assets.xcassets */,
 				29027EEA24C8C23C00AD8774 /* LaunchScreen.storyboard */,
 				29027EED24C8C23C00AD8774 /* Info.plist */,
@@ -267,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29027F1424C8CAAB00AD8774 /* ShareView.swift in Sources */,
 				29027EE024C8C23900AD8774 /* AppDelegate.swift in Sources */,
 				29027EE224C8C23900AD8774 /* SceneDelegate.swift in Sources */,
+				29027F1024C8C7D400AD8774 /* DiagnosisView.swift in Sources */,
 				29027EE424C8C23900AD8774 /* ContentView.swift in Sources */,
+				29027F1224C8CA7000AD8774 /* IdentifyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,24 +13,30 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+            DiagnosisView()
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image(systemName: "heart")
+                        Text("Diagnosis")
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            IdentifyView()
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "camera")
+                        Text("Identify")
                     }
                 }
                 .tag(1)
+            ShareView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.2")
+                        Text("Share")
+                    }
+                }
+                .tag(2)
         }
     }
 }
@@ -38,5 +44,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .previewDevice(PreviewDevice(rawValue: "iPhone XR"))
+
     }
 }
