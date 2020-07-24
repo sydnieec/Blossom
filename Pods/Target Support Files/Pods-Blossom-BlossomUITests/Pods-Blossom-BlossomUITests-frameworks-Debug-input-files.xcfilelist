@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Blossom-BlossomUITests/Pods-Blossom-BlossomUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBMSwiftSDKCore/IBMSwiftSDKCore.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonVisualRecognitionV3/VisualRecognition.framework

@@ -1,0 +1,1289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F4E1C22A8D1587BD09160B4B4CB863 /* IBMSwiftSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A7E22DC3AB1B3FC57428E0B65D1BB0C /* Pods-BlossomTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 741D1EE2CC9DE7968C52851E150E5444 /* Pods-BlossomTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C596AC6CBD9E5218A6A250E2D21887 /* RestRequest.swift */; };
+		337913328DA54AE09A92736CFFAE9F7B /* Pods-BlossomTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED51D12C713F8D28B3DC1640ADB252 /* Pods-BlossomTests-dummy.m */; };
+		35E45B1001DFD237FDC309C23D347324 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90C7ABCF5F9ADE4D8F36645B4ECC27 /* Shared.swift */; };
+		38CF50DB578B9181C5E0384C7F4A5B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		44B80932BAEFDF072847309AFA26A823 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077B8F0D191CB9D0B4B8500685B40AB /* Classifier.swift */; };
+		4719F8C38CE7C9647824389811ECE3CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		52E245AE0E572D45507F63C22273291E /* Pods-Blossom-BlossomUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E55D747EBB2D32658A5099DDCB46CC /* Pods-Blossom-BlossomUITests-dummy.m */; };
+		55E83F77B7E2CD400A2C2B0365351086 /* ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E44FF8C7E7C92A575B7A840DD5CDE7 /* ErrorInfo.swift */; };
+		59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D50AA41567F4E3C452F2C31BD8CEF /* CloudPakForDataAuthenticator.swift */; };
+		5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB7ECA3814BEBC3EC81D5CA78F3E974 /* MultipartFormData.swift */; };
+		5E2F3DAE92E7304CCF106BAB5C552FA7 /* ClassifiedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67019E5EB211869EEB9437AFE251467 /* ClassifiedImage.swift */; };
+		6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 107F66F8FD4961870259799A1852DF32 /* IBMSwiftSDKCore-dummy.m */; };
+		6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D92668B3D6F793904D63539630A5B /* InsecureConnection.swift */; };
+		785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED236B82A32F2BF7FB02D71B42259D8 /* JWT.swift */; };
+		7FBB243D10E3BA407BDF8F9C2886D6B7 /* ClassifierResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECB00CBF075C3A1D6EA817702926028 /* ClassifierResult.swift */; };
+		80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F6E0FBB1EB347A56AF32310044C57 /* RestResponse.swift */; };
+		824D62FC4183D14ECDAE9318D67461B5 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D755B80A4FB02E804C01F82693CCE8 /* InsecureConnection.swift */; };
+		86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0205FBC9FD05B5464792CEC40980BA34 /* Authentication.swift */; };
+		891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EABF9DC0A9F0CA6CC81E0DB44F4 /* ConfigBasedAuthenticatorFactory.swift */; };
+		8FE39676FFEBDB5FF65E1BEF095B2E66 /* Pods-Blossom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C5D1AEBDF94525FC8F2C133213DF3D /* Pods-Blossom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95742D89F308D68CD00BD616F1A6EABC /* ClassifiedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9C5EFBCF0E83D0C1B30A5E2B2E0C4 /* ClassifiedImages.swift */; };
+		9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF02338B6D1721BCE94C2963876371F /* RestError.swift */; };
+		A2CB3B1683ECFD1D04F4D7100193A983 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423732CAE309AAFF0131AA8881932AC3 /* Class.swift */; };
+		A48025A96C8860E85CF702050AA5D7ED /* Pods-Blossom-BlossomUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A81A2A57D356B9C12F352B17D4E979D /* Pods-Blossom-BlossomUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70634AF9CCFA0CBEDB25B5FF0455BEB6 /* IAMAuthenticator.swift */; };
+		AFA635DB54F9CC5FCC22D3E274262E24 /* ClassResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1030708A2063953D78DEDAF5E4A1B2 /* ClassResult.swift */; };
+		B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D25E12746CA046A7EB95CE221C85B /* CodableExtensions.swift */; };
+		CBD306D6E70EED2D7AD9F494C2A259BA /* Pods-Blossom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E1FFA50FDA277C469EC201FE7E4C3 /* Pods-Blossom-dummy.m */; };
+		D40D659BE43BD13A1C8E7DEB4DAC7F02 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */; };
+		D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD53F2E84D97EF75FBBDD9C595CD5F /* JSON.swift */; };
+		D9CC14D8FF3D304AEAB6D9C9A6ABD74C /* IBMWatsonVisualRecognitionV3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2306F42ED1EE81B28E1F844D149BBD /* IBMWatsonVisualRecognitionV3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCE1936B9882251D4EB42ABEC46D2990 /* VisualRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B16A541637CF89FF3882F6DFE4261 /* VisualRecognition.swift */; };
+		DFBFE86EA7B9642528A3B03C969E0ADD /* WarningInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9344947E41E6B9B72577FE41931210 /* WarningInfo.swift */; };
+		E230F05902FB79985F9F63DF703D4CF9 /* Classifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738A59C6B67C3CDAC1F9143E488E5D9 /* Classifiers.swift */; };
+		E5708E1396D26BB67C6B3497357B3060 /* IBMWatsonVisualRecognitionV3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F345CBBA076E17C348763EC69634F0D /* IBMWatsonVisualRecognitionV3-dummy.m */; };
+		EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		EAB47EF8B6FAF085C53CBCA2B545F6E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		EC40C420EACD00715EC3F1F0A67C9B20 /* VisualRecognition+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA4C7A52E62B1AFCEE2CAEF43AC4DE /* VisualRecognition+CoreML.swift */; };
+		EF693C74C9C1422678717E7B1A6A7D07 /* VisualRecognition+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E32CF4BDF65F2B3D575891D06C500E /* VisualRecognition+UIImage.swift */; };
+		F36CC1863F2A947131ED857CCBE27ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119FC8E0C7FC838516AB193BF9E838A8 /* CredentialUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EFEA77C3F78067630648521E11C855B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08AE33DFB7C5DA716E481620909B5E6;
+			remoteInfo = IBMWatsonVisualRecognitionV3;
+		};
+		5D42120290342D01FC51213E7428C36D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		6FBB31DA4964D56965302CB64BB8FF5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		85C1439FFA0D2D2275F8863E84563600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08AE33DFB7C5DA716E481620909B5E6;
+			remoteInfo = IBMWatsonVisualRecognitionV3;
+		};
+		AF8C73C833E27A0B358C50E80CA614EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E759AD4AAA09F47152AADF7061A80F4;
+			remoteInfo = "Pods-Blossom";
+		};
+		E276AD97765A871E46F6718FE361DE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0087709FF7C053084E06DE8D04024BE8 /* Pods-Blossom-BlossomUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Blossom-BlossomUITests.modulemap"; sourceTree = "<group>"; };
+		0205FBC9FD05B5464792CEC40980BA34 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/IBMSwiftSDKCore/Authentication/Authentication.swift; sourceTree = "<group>"; };
+		03A96A8943B4134972F774DDAD6EE6D4 /* IBMWatsonVisualRecognitionV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-prefix.pch"; sourceTree = "<group>"; };
+		08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VisualRecognition.framework; path = IBMWatsonVisualRecognitionV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAD53F2E84D97EF75FBBDD9C595CD5F /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/IBMSwiftSDKCore/JSON.swift; sourceTree = "<group>"; };
+		107F66F8FD4961870259799A1852DF32 /* IBMSwiftSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMSwiftSDKCore-dummy.m"; sourceTree = "<group>"; };
+		108008784D7F9652F1573D91FCB12F9D /* Pods-Blossom-BlossomUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blossom-BlossomUITests-frameworks.sh"; sourceTree = "<group>"; };
+		119FC8E0C7FC838516AB193BF9E838A8 /* CredentialUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialUtils.swift; path = Sources/IBMSwiftSDKCore/CredentialUtils.swift; sourceTree = "<group>"; };
+		166D62AA20F63A051DE55799093096D3 /* IBMSwiftSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		179D92668B3D6F793904D63539630A5B /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/IBMSwiftSDKCore/Authentication/InsecureConnection.swift; sourceTree = "<group>"; };
+		191D25E12746CA046A7EB95CE221C85B /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/IBMSwiftSDKCore/CodableExtensions.swift; sourceTree = "<group>"; };
+		2202A0B27E24E24960CDE51A4D2E06F3 /* Pods-Blossom-BlossomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blossom-BlossomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		295D50AA41567F4E3C452F2C31BD8CEF /* CloudPakForDataAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudPakForDataAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/CloudPakForDataAuthenticator.swift; sourceTree = "<group>"; };
+		2AB9C5EFBCF0E83D0C1B30A5E2B2E0C4 /* ClassifiedImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifiedImages.swift; path = Source/VisualRecognitionV3/Models/ClassifiedImages.swift; sourceTree = "<group>"; };
+		3119FFD5E0E2CADEB4B89D30875953E5 /* Pods_Blossom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Blossom.framework; path = "Pods-Blossom.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC1A03A8859E3EFE428D4EF91762641 /* Pods-Blossom-BlossomUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blossom-BlossomUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B1030708A2063953D78DEDAF5E4A1B2 /* ClassResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassResult.swift; path = Source/VisualRecognitionV3/Models/ClassResult.swift; sourceTree = "<group>"; };
+		3EF3010C41043F30DD090ADBC3CEDFDF /* Pods-BlossomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlossomTests.release.xcconfig"; sourceTree = "<group>"; };
+		4056412A35819B67AF116EBC6151B6FC /* IBMSwiftSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMSwiftSDKCore.modulemap; sourceTree = "<group>"; };
+		423732CAE309AAFF0131AA8881932AC3 /* Class.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Class.swift; path = Source/VisualRecognitionV3/Models/Class.swift; sourceTree = "<group>"; };
+		4348E46925FB0CD2807BCAB6F0A39FAB /* Pods-Blossom-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blossom-Info.plist"; sourceTree = "<group>"; };
+		44F4E1C22A8D1587BD09160B4B4CB863 /* IBMSwiftSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		4669585D46A21B3F077BD70D7FAF0318 /* Pods-Blossom-BlossomUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blossom-BlossomUITests-Info.plist"; sourceTree = "<group>"; };
+		46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4738A59C6B67C3CDAC1F9143E488E5D9 /* Classifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classifiers.swift; path = Source/VisualRecognitionV3/Models/Classifiers.swift; sourceTree = "<group>"; };
+		4BDF17CAE898D1743416613EAED9DC33 /* Pods-Blossom-BlossomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blossom-BlossomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4DF02338B6D1721BCE94C2963876371F /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/IBMSwiftSDKCore/RestError.swift; sourceTree = "<group>"; };
+		4F90C7ABCF5F9ADE4D8F36645B4ECC27 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		50E52BF167344B088DBCEC757F82FC00 /* IBMSwiftSDKCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.debug.xcconfig; sourceTree = "<group>"; };
+		57C32E16AAF96324EBB39C694E4BB84E /* Pods-BlossomTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlossomTests-Info.plist"; sourceTree = "<group>"; };
+		57C596AC6CBD9E5218A6A250E2D21887 /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/IBMSwiftSDKCore/RestRequest.swift; sourceTree = "<group>"; };
+		5EE1B89D71205121365B0F1351F8D8CE /* Pods-Blossom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Blossom.modulemap"; sourceTree = "<group>"; };
+		5F2B16A541637CF89FF3882F6DFE4261 /* VisualRecognition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualRecognition.swift; path = Source/VisualRecognitionV3/VisualRecognition.swift; sourceTree = "<group>"; };
+		602D5411F3A6C7336ACAC90F14986643 /* IBMWatsonVisualRecognitionV3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonVisualRecognitionV3.modulemap; sourceTree = "<group>"; };
+		60EC228244EC3D37EB151430E8C7CEAB /* IBMWatsonVisualRecognitionV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonVisualRecognitionV3-Info.plist"; sourceTree = "<group>"; };
+		69DE71FA24CB4CD3A4B531F1DB4F4B2E /* Pods-Blossom-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blossom-frameworks.sh"; sourceTree = "<group>"; };
+		70634AF9CCFA0CBEDB25B5FF0455BEB6 /* IAMAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAMAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/IAMAuthenticator.swift; sourceTree = "<group>"; };
+		72EA4C7A52E62B1AFCEE2CAEF43AC4DE /* VisualRecognition+CoreML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualRecognition+CoreML.swift"; path = "Source/VisualRecognitionV3/VisualRecognition+CoreML.swift"; sourceTree = "<group>"; };
+		741D1EE2CC9DE7968C52851E150E5444 /* Pods-BlossomTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlossomTests-umbrella.h"; sourceTree = "<group>"; };
+		74D755B80A4FB02E804C01F82693CCE8 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		7E98ED7219FB74B1DA5DD226BE9EAE5D /* Pods_Blossom_BlossomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Blossom_BlossomUITests.framework; path = "Pods-Blossom-BlossomUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82940F111520BB175BF138F9F8AD7F12 /* Pods-Blossom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blossom.debug.xcconfig"; sourceTree = "<group>"; };
+		8785FC5999A966D8114EC3924A3B937C /* Pods_BlossomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlossomTests.framework; path = "Pods-BlossomTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED236B82A32F2BF7FB02D71B42259D8 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Sources/IBMSwiftSDKCore/Authentication/JWT.swift; sourceTree = "<group>"; };
+		8F345CBBA076E17C348763EC69634F0D /* IBMWatsonVisualRecognitionV3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonVisualRecognitionV3-dummy.m"; sourceTree = "<group>"; };
+		8FCEE182999DAA4F63EF063D73741DCE /* Pods-BlossomTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlossomTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9072ED66DC066130E004FD0C5F815470 /* Pods-Blossom-BlossomUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blossom-BlossomUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92ED51D12C713F8D28B3DC1640ADB252 /* Pods-BlossomTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlossomTests-dummy.m"; sourceTree = "<group>"; };
+		93D6E17485810B3D851D8C7F887FC6AA /* Pods-Blossom-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blossom-acknowledgements.plist"; sourceTree = "<group>"; };
+		96BB58085B614FC96D18C8F9C72B5774 /* Pods-Blossom-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blossom-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A81A2A57D356B9C12F352B17D4E979D /* Pods-Blossom-BlossomUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blossom-BlossomUITests-umbrella.h"; sourceTree = "<group>"; };
+		9AA6E1B44A878965DC4865C300458433 /* IBMSwiftSDKCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.release.xcconfig; sourceTree = "<group>"; };
+		9D1E1FFA50FDA277C469EC201FE7E4C3 /* Pods-Blossom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blossom-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9344947E41E6B9B72577FE41931210 /* WarningInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarningInfo.swift; path = Source/VisualRecognitionV3/Models/WarningInfo.swift; sourceTree = "<group>"; };
+		A318684391B43016DC9558E91C800ACE /* IBMWatsonVisualRecognitionV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonVisualRecognitionV3.debug.xcconfig; sourceTree = "<group>"; };
+		A411845E51875C5BAEA1932C0A7E41E0 /* Pods-Blossom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blossom.release.xcconfig"; sourceTree = "<group>"; };
+		A4E44FF8C7E7C92A575B7A840DD5CDE7 /* ErrorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorInfo.swift; path = Source/VisualRecognitionV3/Models/ErrorInfo.swift; sourceTree = "<group>"; };
+		AA0E0C845F2469DF19D992D27203D5E1 /* Pods-BlossomTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlossomTests.modulemap"; sourceTree = "<group>"; };
+		B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4E55D747EBB2D32658A5099DDCB46CC /* Pods-Blossom-BlossomUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blossom-BlossomUITests-dummy.m"; sourceTree = "<group>"; };
+		B4FF5EABF9DC0A9F0CA6CC81E0DB44F4 /* ConfigBasedAuthenticatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigBasedAuthenticatorFactory.swift; path = Sources/IBMSwiftSDKCore/Authentication/ConfigBasedAuthenticatorFactory.swift; sourceTree = "<group>"; };
+		B7648DC96EA4F189E5ECD01ED88A438B /* Pods-BlossomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlossomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2306F42ED1EE81B28E1F844D149BBD /* IBMWatsonVisualRecognitionV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-umbrella.h"; sourceTree = "<group>"; };
+		D66107ABC194424671BE5E12450AD695 /* IBMSwiftSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMSwiftSDKCore-Info.plist"; sourceTree = "<group>"; };
+		D67019E5EB211869EEB9437AFE251467 /* ClassifiedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifiedImage.swift; path = Source/VisualRecognitionV3/Models/ClassifiedImage.swift; sourceTree = "<group>"; };
+		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBMSwiftSDKCore.framework; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A8CFC39F578BDCEE84E8F85051A3F9 /* IBMWatsonVisualRecognitionV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonVisualRecognitionV3.release.xcconfig; sourceTree = "<group>"; };
+		D9E32CF4BDF65F2B3D575891D06C500E /* VisualRecognition+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualRecognition+UIImage.swift"; path = "Source/VisualRecognitionV3/VisualRecognition+UIImage.swift"; sourceTree = "<group>"; };
+		E077B8F0D191CB9D0B4B8500685B40AB /* Classifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classifier.swift; path = Source/VisualRecognitionV3/Models/Classifier.swift; sourceTree = "<group>"; };
+		E33F6E0FBB1EB347A56AF32310044C57 /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/IBMSwiftSDKCore/RestResponse.swift; sourceTree = "<group>"; };
+		E4B03F59A648D69B2FC9B9918D4AB337 /* Pods-BlossomTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlossomTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5C5D1AEBDF94525FC8F2C133213DF3D /* Pods-Blossom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blossom-umbrella.h"; sourceTree = "<group>"; };
+		FDB7ECA3814BEBC3EC81D5CA78F3E974 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/IBMSwiftSDKCore/MultipartFormData.swift; sourceTree = "<group>"; };
+		FECB00CBF075C3A1D6EA817702926028 /* ClassifierResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifierResult.swift; path = Source/VisualRecognitionV3/Models/ClassifierResult.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13DD1E75D984BF835C3B5FF291B2D12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB47EF8B6FAF085C53CBCA2B545F6E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74890BA0FD00D07847205C51AC11FE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36CC1863F2A947131ED857CCBE27ADD /* Foundation.framework in Frameworks */,
+				D40D659BE43BD13A1C8E7DEB4DAC7F02 /* IBMSwiftSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D1259E497AD6CBAC4D7A0D058ED01A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CF50DB578B9181C5E0384C7F4A5B77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA43938E6BF4914B17B7F5AA3C16D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4719F8C38CE7C9647824389811ECE3CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192B532BB14DA21923D5B849993C7986 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2E50D22F622D79B077E1133EA58D307D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4056412A35819B67AF116EBC6151B6FC /* IBMSwiftSDKCore.modulemap */,
+				107F66F8FD4961870259799A1852DF32 /* IBMSwiftSDKCore-dummy.m */,
+				D66107ABC194424671BE5E12450AD695 /* IBMSwiftSDKCore-Info.plist */,
+				166D62AA20F63A051DE55799093096D3 /* IBMSwiftSDKCore-prefix.pch */,
+				44F4E1C22A8D1587BD09160B4B4CB863 /* IBMSwiftSDKCore-umbrella.h */,
+				50E52BF167344B088DBCEC757F82FC00 /* IBMSwiftSDKCore.debug.xcconfig */,
+				9AA6E1B44A878965DC4865C300458433 /* IBMSwiftSDKCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMSwiftSDKCore";
+			sourceTree = "<group>";
+		};
+		3047D82934C27C83D090DE980838D708 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F27CCC2E85C241C52D7F32EE348D394A /* Pods-Blossom */,
+				7630E04409800469DF7BDE6CC50AAA6D /* Pods-Blossom-BlossomUITests */,
+				EA8C52A35118EAF2F6F0FF79102FA01D /* Pods-BlossomTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */,
+				192B532BB14DA21923D5B849993C7986 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D08604D31FEC857C411A7E386199C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9DDCFCB232E02AEEAC39D94105CB5 /* IBMSwiftSDKCore */,
+				75FA41271A6BE5DC3DAF844ED3FD3B51 /* IBMWatsonVisualRecognitionV3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75FA41271A6BE5DC3DAF844ED3FD3B51 /* IBMWatsonVisualRecognitionV3 */ = {
+			isa = PBXGroup;
+			children = (
+				423732CAE309AAFF0131AA8881932AC3 /* Class.swift */,
+				D67019E5EB211869EEB9437AFE251467 /* ClassifiedImage.swift */,
+				2AB9C5EFBCF0E83D0C1B30A5E2B2E0C4 /* ClassifiedImages.swift */,
+				E077B8F0D191CB9D0B4B8500685B40AB /* Classifier.swift */,
+				FECB00CBF075C3A1D6EA817702926028 /* ClassifierResult.swift */,
+				4738A59C6B67C3CDAC1F9143E488E5D9 /* Classifiers.swift */,
+				3B1030708A2063953D78DEDAF5E4A1B2 /* ClassResult.swift */,
+				A4E44FF8C7E7C92A575B7A840DD5CDE7 /* ErrorInfo.swift */,
+				74D755B80A4FB02E804C01F82693CCE8 /* InsecureConnection.swift */,
+				4F90C7ABCF5F9ADE4D8F36645B4ECC27 /* Shared.swift */,
+				5F2B16A541637CF89FF3882F6DFE4261 /* VisualRecognition.swift */,
+				72EA4C7A52E62B1AFCEE2CAEF43AC4DE /* VisualRecognition+CoreML.swift */,
+				D9E32CF4BDF65F2B3D575891D06C500E /* VisualRecognition+UIImage.swift */,
+				9E9344947E41E6B9B72577FE41931210 /* WarningInfo.swift */,
+				7F9009949FA5F7A6D28D749DE916F5E4 /* Support Files */,
+			);
+			name = IBMWatsonVisualRecognitionV3;
+			path = IBMWatsonVisualRecognitionV3;
+			sourceTree = "<group>";
+		};
+		7630E04409800469DF7BDE6CC50AAA6D /* Pods-Blossom-BlossomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0087709FF7C053084E06DE8D04024BE8 /* Pods-Blossom-BlossomUITests.modulemap */,
+				9072ED66DC066130E004FD0C5F815470 /* Pods-Blossom-BlossomUITests-acknowledgements.markdown */,
+				3AC1A03A8859E3EFE428D4EF91762641 /* Pods-Blossom-BlossomUITests-acknowledgements.plist */,
+				B4E55D747EBB2D32658A5099DDCB46CC /* Pods-Blossom-BlossomUITests-dummy.m */,
+				108008784D7F9652F1573D91FCB12F9D /* Pods-Blossom-BlossomUITests-frameworks.sh */,
+				4669585D46A21B3F077BD70D7FAF0318 /* Pods-Blossom-BlossomUITests-Info.plist */,
+				9A81A2A57D356B9C12F352B17D4E979D /* Pods-Blossom-BlossomUITests-umbrella.h */,
+				2202A0B27E24E24960CDE51A4D2E06F3 /* Pods-Blossom-BlossomUITests.debug.xcconfig */,
+				4BDF17CAE898D1743416613EAED9DC33 /* Pods-Blossom-BlossomUITests.release.xcconfig */,
+			);
+			name = "Pods-Blossom-BlossomUITests";
+			path = "Target Support Files/Pods-Blossom-BlossomUITests";
+			sourceTree = "<group>";
+		};
+		7F9009949FA5F7A6D28D749DE916F5E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				602D5411F3A6C7336ACAC90F14986643 /* IBMWatsonVisualRecognitionV3.modulemap */,
+				8F345CBBA076E17C348763EC69634F0D /* IBMWatsonVisualRecognitionV3-dummy.m */,
+				60EC228244EC3D37EB151430E8C7CEAB /* IBMWatsonVisualRecognitionV3-Info.plist */,
+				03A96A8943B4134972F774DDAD6EE6D4 /* IBMWatsonVisualRecognitionV3-prefix.pch */,
+				CD2306F42ED1EE81B28E1F844D149BBD /* IBMWatsonVisualRecognitionV3-umbrella.h */,
+				A318684391B43016DC9558E91C800ACE /* IBMWatsonVisualRecognitionV3.debug.xcconfig */,
+				D8A8CFC39F578BDCEE84E8F85051A3F9 /* IBMWatsonVisualRecognitionV3.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonVisualRecognitionV3";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */,
+				4D08604D31FEC857C411A7E386199C86 /* Pods */,
+				EB78B66D86CC60D46088A5FA4557D8EC /* Products */,
+				3047D82934C27C83D090DE980838D708 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE9DDCFCB232E02AEEAC39D94105CB5 /* IBMSwiftSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				0205FBC9FD05B5464792CEC40980BA34 /* Authentication.swift */,
+				295D50AA41567F4E3C452F2C31BD8CEF /* CloudPakForDataAuthenticator.swift */,
+				191D25E12746CA046A7EB95CE221C85B /* CodableExtensions.swift */,
+				B4FF5EABF9DC0A9F0CA6CC81E0DB44F4 /* ConfigBasedAuthenticatorFactory.swift */,
+				119FC8E0C7FC838516AB193BF9E838A8 /* CredentialUtils.swift */,
+				70634AF9CCFA0CBEDB25B5FF0455BEB6 /* IAMAuthenticator.swift */,
+				179D92668B3D6F793904D63539630A5B /* InsecureConnection.swift */,
+				0DAD53F2E84D97EF75FBBDD9C595CD5F /* JSON.swift */,
+				8ED236B82A32F2BF7FB02D71B42259D8 /* JWT.swift */,
+				FDB7ECA3814BEBC3EC81D5CA78F3E974 /* MultipartFormData.swift */,
+				4DF02338B6D1721BCE94C2963876371F /* RestError.swift */,
+				57C596AC6CBD9E5218A6A250E2D21887 /* RestRequest.swift */,
+				E33F6E0FBB1EB347A56AF32310044C57 /* RestResponse.swift */,
+				2E50D22F622D79B077E1133EA58D307D /* Support Files */,
+			);
+			name = IBMSwiftSDKCore;
+			path = IBMSwiftSDKCore;
+			sourceTree = "<group>";
+		};
+		EA8C52A35118EAF2F6F0FF79102FA01D /* Pods-BlossomTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E0C845F2469DF19D992D27203D5E1 /* Pods-BlossomTests.modulemap */,
+				8FCEE182999DAA4F63EF063D73741DCE /* Pods-BlossomTests-acknowledgements.markdown */,
+				E4B03F59A648D69B2FC9B9918D4AB337 /* Pods-BlossomTests-acknowledgements.plist */,
+				92ED51D12C713F8D28B3DC1640ADB252 /* Pods-BlossomTests-dummy.m */,
+				57C32E16AAF96324EBB39C694E4BB84E /* Pods-BlossomTests-Info.plist */,
+				741D1EE2CC9DE7968C52851E150E5444 /* Pods-BlossomTests-umbrella.h */,
+				B7648DC96EA4F189E5ECD01ED88A438B /* Pods-BlossomTests.debug.xcconfig */,
+				3EF3010C41043F30DD090ADBC3CEDFDF /* Pods-BlossomTests.release.xcconfig */,
+			);
+			name = "Pods-BlossomTests";
+			path = "Target Support Files/Pods-BlossomTests";
+			sourceTree = "<group>";
+		};
+		EB78B66D86CC60D46088A5FA4557D8EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */,
+				3119FFD5E0E2CADEB4B89D30875953E5 /* Pods_Blossom.framework */,
+				7E98ED7219FB74B1DA5DD226BE9EAE5D /* Pods_Blossom_BlossomUITests.framework */,
+				8785FC5999A966D8114EC3924A3B937C /* Pods_BlossomTests.framework */,
+				08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F27CCC2E85C241C52D7F32EE348D394A /* Pods-Blossom */ = {
+			isa = PBXGroup;
+			children = (
+				5EE1B89D71205121365B0F1351F8D8CE /* Pods-Blossom.modulemap */,
+				96BB58085B614FC96D18C8F9C72B5774 /* Pods-Blossom-acknowledgements.markdown */,
+				93D6E17485810B3D851D8C7F887FC6AA /* Pods-Blossom-acknowledgements.plist */,
+				9D1E1FFA50FDA277C469EC201FE7E4C3 /* Pods-Blossom-dummy.m */,
+				69DE71FA24CB4CD3A4B531F1DB4F4B2E /* Pods-Blossom-frameworks.sh */,
+				4348E46925FB0CD2807BCAB6F0A39FAB /* Pods-Blossom-Info.plist */,
+				E5C5D1AEBDF94525FC8F2C133213DF3D /* Pods-Blossom-umbrella.h */,
+				82940F111520BB175BF138F9F8AD7F12 /* Pods-Blossom.debug.xcconfig */,
+				A411845E51875C5BAEA1932C0A7E41E0 /* Pods-Blossom.release.xcconfig */,
+			);
+			name = "Pods-Blossom";
+			path = "Target Support Files/Pods-Blossom";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FF083BA7002140A55195B9A1DCF54D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CC14D8FF3D304AEAB6D9C9A6ABD74C /* IBMWatsonVisualRecognitionV3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9293F68AE139C91721E2F711BFF020E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7E22DC3AB1B3FC57428E0B65D1BB0C /* Pods-BlossomTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5993ACDCEAE02772A77913AE4C99839 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE39676FFEBDB5FF65E1BEF095B2E66 /* Pods-Blossom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD7BE0E45317684B5B3DCCADA4BAACC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48025A96C8860E85CF702050AA5D7ED /* Pods-Blossom-BlossomUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		188DFF5C14AB16EEDA833AAF61E4198F /* Pods-BlossomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69E469CF3CF3B51F607BD2703513FBE /* Build configuration list for PBXNativeTarget "Pods-BlossomTests" */;
+			buildPhases = (
+				9293F68AE139C91721E2F711BFF020E1 /* Headers */,
+				B4206227B783C315B23B1416795BF430 /* Sources */,
+				CEA43938E6BF4914B17B7F5AA3C16D3B /* Frameworks */,
+				F95B7DBD577E6542D0B5022D2FFA91B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C22A6B0434C474026F91674E9DF89B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlossomTests";
+			productName = "Pods-BlossomTests";
+			productReference = 8785FC5999A966D8114EC3924A3B937C /* Pods_BlossomTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E759AD4AAA09F47152AADF7061A80F4 /* Pods-Blossom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C7686222C17DA5380EB832344E4BFC /* Build configuration list for PBXNativeTarget "Pods-Blossom" */;
+			buildPhases = (
+				C5993ACDCEAE02772A77913AE4C99839 /* Headers */,
+				84FFBC24CF392F8714D2C8D0A98F2654 /* Sources */,
+				B7D1259E497AD6CBAC4D7A0D058ED01A /* Frameworks */,
+				5C1FB3FE4A32A1FA2B0C8A23B9728C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A0E7587141D1D4AA4ED11B2F51A1DA6 /* PBXTargetDependency */,
+				9762011970ABFC3629B2DB8FF6A46B28 /* PBXTargetDependency */,
+			);
+			name = "Pods-Blossom";
+			productName = "Pods-Blossom";
+			productReference = 3119FFD5E0E2CADEB4B89D30875953E5 /* Pods_Blossom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD90AA062FA73BCCF6D4FAC31896ED11 /* Pods-Blossom-BlossomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3226746BF20A5AF487C7AE4C16F46A /* Build configuration list for PBXNativeTarget "Pods-Blossom-BlossomUITests" */;
+			buildPhases = (
+				FDD7BE0E45317684B5B3DCCADA4BAACC /* Headers */,
+				9C90328C1E1891DBF2C20C069D8ED01C /* Sources */,
+				13DD1E75D984BF835C3B5FF291B2D12D /* Frameworks */,
+				7DDA67B6ADCDFA32E4705CA6C93B8F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47E1698611D37D0E7089AAFCC698FBA6 /* PBXTargetDependency */,
+				E6B31F1FF86AF9B295D9772C0C6021FB /* PBXTargetDependency */,
+			);
+			name = "Pods-Blossom-BlossomUITests";
+			productName = "Pods-Blossom-BlossomUITests";
+			productReference = 7E98ED7219FB74B1DA5DD226BE9EAE5D /* Pods_Blossom_BlossomUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A223160A31941DA14B2201747AD544A /* Build configuration list for PBXNativeTarget "IBMWatsonVisualRecognitionV3" */;
+			buildPhases = (
+				69FF083BA7002140A55195B9A1DCF54D /* Headers */,
+				BDED47B4F071134CE0D7A262C3E6D6BC /* Sources */,
+				74890BA0FD00D07847205C51AC11FE27 /* Frameworks */,
+				536ECF27DBC2DA5277BAF8226C20384A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07BADC17C2E2EA9C5982488F5B25B023 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonVisualRecognitionV3;
+			productName = IBMWatsonVisualRecognitionV3;
+			productReference = 08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */;
+			buildPhases = (
+				5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */,
+				41794AAA12C46CD1E820B389596A05EE /* Sources */,
+				B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */,
+				366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMSwiftSDKCore;
+			productName = IBMSwiftSDKCore;
+			productReference = D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EB78B66D86CC60D46088A5FA4557D8EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */,
+				B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */,
+				9E759AD4AAA09F47152AADF7061A80F4 /* Pods-Blossom */,
+				AD90AA062FA73BCCF6D4FAC31896ED11 /* Pods-Blossom-BlossomUITests */,
+				188DFF5C14AB16EEDA833AAF61E4198F /* Pods-BlossomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536ECF27DBC2DA5277BAF8226C20384A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1FB3FE4A32A1FA2B0C8A23B9728C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DDA67B6ADCDFA32E4705CA6C93B8F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95B7DBD577E6542D0B5022D2FFA91B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41794AAA12C46CD1E820B389596A05EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */,
+				59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */,
+				B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */,
+				891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */,
+				FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */,
+				AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */,
+				6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */,
+				6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */,
+				D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */,
+				785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */,
+				5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */,
+				9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */,
+				2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */,
+				80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFBC24CF392F8714D2C8D0A98F2654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD306D6E70EED2D7AD9F494C2A259BA /* Pods-Blossom-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C90328C1E1891DBF2C20C069D8ED01C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E245AE0E572D45507F63C22273291E /* Pods-Blossom-BlossomUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4206227B783C315B23B1416795BF430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337913328DA54AE09A92736CFFAE9F7B /* Pods-BlossomTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDED47B4F071134CE0D7A262C3E6D6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CB3B1683ECFD1D04F4D7100193A983 /* Class.swift in Sources */,
+				5E2F3DAE92E7304CCF106BAB5C552FA7 /* ClassifiedImage.swift in Sources */,
+				95742D89F308D68CD00BD616F1A6EABC /* ClassifiedImages.swift in Sources */,
+				44B80932BAEFDF072847309AFA26A823 /* Classifier.swift in Sources */,
+				7FBB243D10E3BA407BDF8F9C2886D6B7 /* ClassifierResult.swift in Sources */,
+				E230F05902FB79985F9F63DF703D4CF9 /* Classifiers.swift in Sources */,
+				AFA635DB54F9CC5FCC22D3E274262E24 /* ClassResult.swift in Sources */,
+				55E83F77B7E2CD400A2C2B0365351086 /* ErrorInfo.swift in Sources */,
+				E5708E1396D26BB67C6B3497357B3060 /* IBMWatsonVisualRecognitionV3-dummy.m in Sources */,
+				824D62FC4183D14ECDAE9318D67461B5 /* InsecureConnection.swift in Sources */,
+				35E45B1001DFD237FDC309C23D347324 /* Shared.swift in Sources */,
+				EC40C420EACD00715EC3F1F0A67C9B20 /* VisualRecognition+CoreML.swift in Sources */,
+				EF693C74C9C1422678717E7B1A6A7D07 /* VisualRecognition+UIImage.swift in Sources */,
+				DCE1936B9882251D4EB42ABEC46D2990 /* VisualRecognition.swift in Sources */,
+				DFBFE86EA7B9642528A3B03C969E0ADD /* WarningInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07BADC17C2E2EA9C5982488F5B25B023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 5D42120290342D01FC51213E7428C36D /* PBXContainerItemProxy */;
+		};
+		1C22A6B0434C474026F91674E9DF89B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Blossom";
+			target = 9E759AD4AAA09F47152AADF7061A80F4 /* Pods-Blossom */;
+			targetProxy = AF8C73C833E27A0B358C50E80CA614EC /* PBXContainerItemProxy */;
+		};
+		47E1698611D37D0E7089AAFCC698FBA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 6FBB31DA4964D56965302CB64BB8FF5F /* PBXContainerItemProxy */;
+		};
+		6A0E7587141D1D4AA4ED11B2F51A1DA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = E276AD97765A871E46F6718FE361DE48 /* PBXContainerItemProxy */;
+		};
+		9762011970ABFC3629B2DB8FF6A46B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonVisualRecognitionV3;
+			target = B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */;
+			targetProxy = 85C1439FFA0D2D2275F8863E84563600 /* PBXContainerItemProxy */;
+		};
+		E6B31F1FF86AF9B295D9772C0C6021FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonVisualRecognitionV3;
+			target = B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */;
+			targetProxy = 3EFEA77C3F78067630648521E11C855B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AA5FE98CA4BB5B253E44DE7B5C2B0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDF17CAE898D1743416613EAED9DC33 /* Pods-Blossom-BlossomUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blossom-BlossomUITests/Pods-Blossom-BlossomUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blossom-BlossomUITests/Pods-Blossom-BlossomUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38EA4AC23697D8B9C0CE12D2AF4FE26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF3010C41043F30DD090ADBC3CEDFDF /* Pods-BlossomTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5278756B766E0256B01879C1CD735F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82940F111520BB175BF138F9F8AD7F12 /* Pods-Blossom.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blossom/Pods-Blossom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blossom/Pods-Blossom.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E18D121604F590BE6151372FAA5F3C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A411845E51875C5BAEA1932C0A7E41E0 /* Pods-Blossom.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blossom/Pods-Blossom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blossom/Pods-Blossom.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		722939D8F7DFE495B06E855AEBAA4680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2202A0B27E24E24960CDE51A4D2E06F3 /* Pods-Blossom-BlossomUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blossom-BlossomUITests/Pods-Blossom-BlossomUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blossom-BlossomUITests/Pods-Blossom-BlossomUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EACEBDD16FD2C1E0E76E970E8971B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA6E1B44A878965DC4865C300458433 /* IBMSwiftSDKCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A341BE07276902D5A079F45A1730FACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7648DC96EA4F189E5ECD01ED88A438B /* Pods-BlossomTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A643246472C3789926BF9722DBF4A53B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A8CFC39F578BDCEE84E8F85051A3F9 /* IBMWatsonVisualRecognitionV3.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3.modulemap";
+				PRODUCT_MODULE_NAME = VisualRecognition;
+				PRODUCT_NAME = VisualRecognition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC4FDBB2CC4D77665CF33A47DF8B41BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50E52BF167344B088DBCEC757F82FC00 /* IBMSwiftSDKCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D02BE34DD9857CF43C84E91DD45C5C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A318684391B43016DC9558E91C800ACE /* IBMWatsonVisualRecognitionV3.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3.modulemap";
+				PRODUCT_MODULE_NAME = VisualRecognition;
+				PRODUCT_NAME = VisualRecognition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3226746BF20A5AF487C7AE4C16F46A /* Build configuration list for PBXNativeTarget "Pods-Blossom-BlossomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722939D8F7DFE495B06E855AEBAA4680 /* Debug */,
+				2AA5FE98CA4BB5B253E44DE7B5C2B0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A223160A31941DA14B2201747AD544A /* Build configuration list for PBXNativeTarget "IBMWatsonVisualRecognitionV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02BE34DD9857CF43C84E91DD45C5C17 /* Debug */,
+				A643246472C3789926BF9722DBF4A53B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C7686222C17DA5380EB832344E4BFC /* Build configuration list for PBXNativeTarget "Pods-Blossom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5278756B766E0256B01879C1CD735F36 /* Debug */,
+				5E18D121604F590BE6151372FAA5F3C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4FDBB2CC4D77665CF33A47DF8B41BB /* Debug */,
+				9EACEBDD16FD2C1E0E76E970E8971B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69E469CF3CF3B51F607BD2703513FBE /* Build configuration list for PBXNativeTarget "Pods-BlossomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A341BE07276902D5A079F45A1730FACB /* Debug */,
+				38EA4AC23697D8B9C0CE12D2AF4FE26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
