@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import VisualRecognition
 struct DiagnosisView: View {
     var body: some View {
         Text("Diagnosis View")
