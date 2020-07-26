@@ -15,6 +15,7 @@ struct IdentifyView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
+    @State private var identified: String = "unknown flower"
 
     var body: some View {
         NavigationView{
@@ -37,10 +38,12 @@ struct IdentifyView: View {
                 }
                 Button(action: {
                     self.resizedimage = resizeimage(self.image!)
-                    sendPostRequest(data: self.resizedimage?.pngData() ?? Data())
+                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data())
                 }) {
                     Text("Identify ")
                 }
+            
+                Text(self.identified)
             }
             .navigationBarTitle("Identify")
         }.sheet(isPresented: $showImagePicker){
@@ -58,24 +61,34 @@ struct IdentifyView_Previews: PreviewProvider {
 }
 
 
-func sendPostRequest(data: Data){
+func sendPostRequest(data: Data) -> String{
     let authenticator = WatsonIAMAuthenticator(apiKey: "OWE4zN1ERqtaeFR-nJ7nJFwRx5xf5WTb4htV2PIE8LA8")
     let visualRecognition = VisualRecognition(version: "2018-03-19", authenticator: authenticator)
     visualRecognition.serviceURL = "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/e33cf98c-e21e-4f54-ad1f-47bcad0d85a0"
 
 //   let url = Bundle.main.url(forResource: "fruitbowl", withExtension: "jpg")
 //    let fruitbowl = try? Data(contentsOf: url!)
-    
+    var identified : String = ""
+
     visualRecognition.classify(imagesFile: data, classifierIDs: ["blossom2_167029230"]) {
       response, error in
            //use po error to check what error description you are getting
-      guard let result = response?.result else {
+//        print(response?.result?.images.description)
+//        print(response?.result?.images)
+        guard let result = response?.result else {
         print(error?.localizedDescription ?? "unknown error")
         return
       }
+        print(result)
+        identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
+        print(identified)
+        return (identified)
 
-      print(result)
+//        return ("response", response?.result?.images[0].classifiers[0].classes[0].class.description)
+//        print(result.ClassifiedImages.image.classifiers.VisualRecognition.classes[0])
+//        print(ClassifiedImage.images)
     }
+    return (identified)
 }
 
 
