@@ -94,12 +94,7 @@ func sendPostRequest(data: Data, identified: String) -> String{
     }
     print (identified)
     return (identified)
-//        return ("response", response?.result?.images[0].classifiers[0].classes[0].class.description)
-//        print(result.ClassifiedImages.image.classifiers.VisualRecognition.classes[0])
-//        print(ClassifiedImage.images)
-//
-//    print (identified)
-//    return (identified)
+
 }
 
 
@@ -140,23 +135,6 @@ func resizeimage(_ image: UIImage) -> UIImage {
     return UIImage(data: imageData!) ?? UIImage()
 }
 
-//func load() -> String{
-//   var data = ""
-//   DispatchQueue.global(qos: .utility).async {
-//     let result = makeAPICall()
-//     DispatchQueue.main.async {
-//         switch result {
-//           case let .success(data):
-//               let data = data as!String
-//
-//            case let .failure(error):
-//               let data = error as!String
-//            }
-//        }
-//    }
-//    return (data)
-//
-//}
 
 
 func makeAPICall(data: Data) -> String{
@@ -164,23 +142,24 @@ func makeAPICall(data: Data) -> String{
         let visualRecognition = VisualRecognition(version: "2018-03-19", authenticator: authenticator)
         visualRecognition.serviceURL = "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/e33cf98c-e21e-4f54-ad1f-47bcad0d85a0"
         var identified =  ""
+        //used dispatchsemaphore to await for values
         let semaphore = DispatchSemaphore(value: 0)
-
+        //the api call to classify the image
         visualRecognition.classify(imagesFile: data, classifierIDs: ["blossom2_167029230"]) {
                  response, error in
-                      //use po error to check what error description you are getting
-           //        print(response?.result?.images.description)
-           //        print(response?.result?.images)
+
                    guard let result = response?.result else {
                    print(error?.localizedDescription ?? "unknown error")
                    return
                  }
         print(result)
-        identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
+        //parses the object to only get the flower name
+       identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
        print(identified)
+        //sends a signal to show that the api request has been done
        semaphore.signal()
     }
-    // API Call Goes Here
+    // checks if a signal has been received
     _ = semaphore.wait(wallTimeout: .distantFuture)
     return (identified)
 

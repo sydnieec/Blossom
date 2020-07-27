@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		29027F1024C8C7D400AD8774 /* DiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */; };
 		29027F1224C8CA7000AD8774 /* IdentifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F1124C8CA7000AD8774 /* IdentifyView.swift */; };
 		29027F1424C8CAAB00AD8774 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29027F1324C8CAAB00AD8774 /* ShareView.swift */; };
+		294E2ED924CE817700085648 /* DiagnosisImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E2ED824CE817700085648 /* DiagnosisImagePicker.swift */; };
 		296840FA24CA1509002A1F91 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296840F924CA1509002A1F91 /* ImagePicker.swift */; };
 		CFC4629F9C11A776D221D3FD /* Pods_Blossom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C9C60CE4C9EB849440B61B /* Pods_Blossom.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisView.swift; sourceTree = "<group>"; };
 		29027F1124C8CA7000AD8774 /* IdentifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyView.swift; sourceTree = "<group>"; };
 		29027F1324C8CAAB00AD8774 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		294E2ED824CE817700085648 /* DiagnosisImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisImagePicker.swift; sourceTree = "<group>"; };
 		296840F924CA1509002A1F91 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4EE11A3ED6293333AA6C52F7 /* Pods-BlossomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlossomTests.debug.xcconfig"; path = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71C9C60CE4C9EB849440B61B /* Pods_Blossom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blossom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 				29027EE124C8C23900AD8774 /* SceneDelegate.swift */,
 				29027EE324C8C23900AD8774 /* ContentView.swift */,
 				29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */,
+				294E2ED824CE817700085648 /* DiagnosisImagePicker.swift */,
 				29027F1124C8CA7000AD8774 /* IdentifyView.swift */,
 				296840F924CA1509002A1F91 /* ImagePicker.swift */,
 				29027F1324C8CAAB00AD8774 /* ShareView.swift */,
@@ -185,7 +188,6 @@
 				4EE11A3ED6293333AA6C52F7 /* Pods-BlossomTests.debug.xcconfig */,
 				256FFCD8D05890ADDF148C94 /* Pods-BlossomTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -435,6 +437,7 @@
 				29027F1024C8C7D400AD8774 /* DiagnosisView.swift in Sources */,
 				29027EE424C8C23900AD8774 /* ContentView.swift in Sources */,
 				29027F1224C8CA7000AD8774 /* IdentifyView.swift in Sources */,
+				294E2ED924CE817700085648 /* DiagnosisImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
