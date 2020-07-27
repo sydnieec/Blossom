@@ -37,8 +37,14 @@ struct IdentifyView: View {
                                         }, .cancel()])
                 }
                 Button(action: {
+                    if (self.image == nil){
+                        self.identified="Please Select an image"
+                    }else{
                     self.resizedimage = resizeimage(self.image!)
-                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data())
+                     self.identified = makeAPICall(data: self.resizedimage?.pngData() ?? Data())
+//                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data(), identified: self.identified )
+
+                    }
                 }) {
                     Text("Identify ")
                 }
@@ -61,38 +67,43 @@ struct IdentifyView_Previews: PreviewProvider {
 }
 
 
-func sendPostRequest(data: Data) -> String{
+func sendPostRequest(data: Data, identified: String) -> String{
     let authenticator = WatsonIAMAuthenticator(apiKey: "OWE4zN1ERqtaeFR-nJ7nJFwRx5xf5WTb4htV2PIE8LA8")
     let visualRecognition = VisualRecognition(version: "2018-03-19", authenticator: authenticator)
     visualRecognition.serviceURL = "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/e33cf98c-e21e-4f54-ad1f-47bcad0d85a0"
 
 //   let url = Bundle.main.url(forResource: "fruitbowl", withExtension: "jpg")
 //    let fruitbowl = try? Data(contentsOf: url!)
-    var identified : String = ""
-
-    visualRecognition.classify(imagesFile: data, classifierIDs: ["blossom2_167029230"]) {
-      response, error in
-           //use po error to check what error description you are getting
-//        print(response?.result?.images.description)
-//        print(response?.result?.images)
-        guard let result = response?.result else {
-        print(error?.localizedDescription ?? "unknown error")
-        return
-      }
-        print(result)
-        identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
-        print(identified)
-        return (identified)
-
+  
+    
+         DispatchQueue.main.async {
+            visualRecognition.classify(imagesFile: data, classifierIDs: ["blossom2_167029230"]) {
+                     response, error in
+                          //use po error to check what error description you are getting
+               //        print(response?.result?.images.description)
+               //        print(response?.result?.images)
+                       guard let result = response?.result else {
+                       print(error?.localizedDescription ?? "unknown error")
+                       return
+                     }
+            print(result)
+            let identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
+           print(identified)
+        }
+        
+    }
+    print (identified)
+    return (identified)
 //        return ("response", response?.result?.images[0].classifiers[0].classes[0].class.description)
 //        print(result.ClassifiedImages.image.classifiers.VisualRecognition.classes[0])
 //        print(ClassifiedImage.images)
-    }
-    return (identified)
+//
+//    print (identified)
+//    return (identified)
 }
 
 
-//function to resize ui image before upload
+//function to resize ui image before upload, Watson visual recognisition expects small upload size
 func resizeimage(_ image: UIImage) -> UIImage {
     var actualHeight = Float(image.size.height)
     var actualWidth = Float(image.size.width)
@@ -128,3 +139,50 @@ func resizeimage(_ image: UIImage) -> UIImage {
     UIGraphicsEndImageContext()
     return UIImage(data: imageData!) ?? UIImage()
 }
+
+//func load() -> String{
+//   var data = ""
+//   DispatchQueue.global(qos: .utility).async {
+//     let result = makeAPICall()
+//     DispatchQueue.main.async {
+//         switch result {
+//           case let .success(data):
+//               let data = data as!String
+//
+//            case let .failure(error):
+//               let data = error as!String
+//            }
+//        }
+//    }
+//    return (data)
+//
+//}
+
+
+func makeAPICall(data: Data) -> String{
+     let authenticator = WatsonIAMAuthenticator(apiKey: "OWE4zN1ERqtaeFR-nJ7nJFwRx5xf5WTb4htV2PIE8LA8")
+        let visualRecognition = VisualRecognition(version: "2018-03-19", authenticator: authenticator)
+        visualRecognition.serviceURL = "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/e33cf98c-e21e-4f54-ad1f-47bcad0d85a0"
+        var identified =  ""
+        let semaphore = DispatchSemaphore(value: 0)
+
+        visualRecognition.classify(imagesFile: data, classifierIDs: ["blossom2_167029230"]) {
+                 response, error in
+                      //use po error to check what error description you are getting
+           //        print(response?.result?.images.description)
+           //        print(response?.result?.images)
+                   guard let result = response?.result else {
+                   print(error?.localizedDescription ?? "unknown error")
+                   return
+                 }
+        print(result)
+        identified = (response?.result?.images[0].classifiers[0].classes[0].class) as! String
+       print(identified)
+       semaphore.signal()
+    }
+    // API Call Goes Here
+    _ = semaphore.wait(wallTimeout: .distantFuture)
+    return (identified)
+
+}
+
