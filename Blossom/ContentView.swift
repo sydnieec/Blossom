@@ -32,11 +32,19 @@ struct ContentView: View {
             ShareView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "person.2")
+                        Image(systemName: "map")
                         Text("Share")
                     }
                 }
                 .tag(2)
+            MeView()
+                         .tabItem {
+                             VStack {
+                                 Image(systemName: "person")
+                                 Text("Me")
+                             }
+                         }
+                         .tag(3)
         }
     }
 }

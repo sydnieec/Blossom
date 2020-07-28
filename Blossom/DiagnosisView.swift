@@ -19,6 +19,7 @@ struct DiagnosisView: View {
     var body: some View {
         NavigationView{
                     VStack{
+                        NavigationLink(destination: DiagnosisResultView(identified: self.$identified)) { Text("View Result") }.background(Color.green).cornerRadius(5)
                         Image(uiImage: image ?? UIImage(named: "placeholder")!)
                             .resizable()
                             .frame(width:300, height : 300)
@@ -35,6 +36,7 @@ struct DiagnosisView: View {
                                                     self.sourceType = .camera
                                                 }, .cancel()])
                         }
+                    
                         Button(action: {
                             if (self.image == nil){
                                 self.identified="Please Select an image"
@@ -50,11 +52,15 @@ struct DiagnosisView: View {
                     
                         Text(self.identified)
                     }
+
                     .navigationBarTitle("Diagnosis")
                 }.sheet(isPresented: $showImagePicker){
                     ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
                 }
+                
+        
     }
+
 }
 
 struct DiagnosisView_Previews: PreviewProvider {
