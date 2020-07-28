@@ -23,6 +23,7 @@
 		296840FA24CA1509002A1F91 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296840F924CA1509002A1F91 /* ImagePicker.swift */; };
 		29DE89D724CF61A20075C290 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DE89D624CF61A20075C290 /* MeView.swift */; };
 		29DE89D924CF66D30075C290 /* DiagnosisResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DE89D824CF66D30075C290 /* DiagnosisResultView.swift */; };
+		29DE89DB24CFCF4D0075C290 /* IdentifyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DE89DA24CFCF4D0075C290 /* IdentifyResultView.swift */; };
 		CFC4629F9C11A776D221D3FD /* Pods_Blossom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C9C60CE4C9EB849440B61B /* Pods_Blossom.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		296840F924CA1509002A1F91 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		29DE89D624CF61A20075C290 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		29DE89D824CF66D30075C290 /* DiagnosisResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisResultView.swift; sourceTree = "<group>"; };
+		29DE89DA24CFCF4D0075C290 /* IdentifyResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyResultView.swift; sourceTree = "<group>"; };
 		4EE11A3ED6293333AA6C52F7 /* Pods-BlossomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlossomTests.debug.xcconfig"; path = "Target Support Files/Pods-BlossomTests/Pods-BlossomTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71C9C60CE4C9EB849440B61B /* Pods_Blossom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blossom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4845CE049226609875A86A /* Pods-Blossom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blossom.debug.xcconfig"; path = "Target Support Files/Pods-Blossom/Pods-Blossom.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				29027F0F24C8C7D400AD8774 /* DiagnosisView.swift */,
 				29DE89D824CF66D30075C290 /* DiagnosisResultView.swift */,
 				29027F1124C8CA7000AD8774 /* IdentifyView.swift */,
+				29DE89DA24CFCF4D0075C290 /* IdentifyResultView.swift */,
 				29DE89D624CF61A20075C290 /* MeView.swift */,
 				296840F924CA1509002A1F91 /* ImagePicker.swift */,
 				29027F1324C8CAAB00AD8774 /* ShareView.swift */,
@@ -442,6 +445,7 @@
 				29027F1024C8C7D400AD8774 /* DiagnosisView.swift in Sources */,
 				29027EE424C8C23900AD8774 /* ContentView.swift in Sources */,
 				29027F1224C8CA7000AD8774 /* IdentifyView.swift in Sources */,
+				29DE89DB24CFCF4D0075C290 /* IdentifyResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

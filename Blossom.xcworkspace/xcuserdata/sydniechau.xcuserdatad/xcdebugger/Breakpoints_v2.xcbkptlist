@@ -3,4 +3,99 @@
    uuid = "5EDDB39F-3258-4503-B10F-30FA38185D4B"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Blossom/ImagePicker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ImagePickerCoordinator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390 - 6a58e5b422a2632f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Blossom.ImagePickerCoordinator.isShown.getter : Swift.Bool"
+                  moduleName = "Blossom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sydniechau/Desktop/code/Blossom/Blossom/ImagePicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "271">
+               </Location>
+               <Location
+                  uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390 - 9a84ab7bb9d74b1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Blossom.ImagePickerCoordinator.isShown.setter : Swift.Bool"
+                  moduleName = "Blossom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sydniechau/Desktop/code/Blossom/Blossom/ImagePicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390 - 9999b3869f02492c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Blossom.ImagePickerCoordinator.isShown.modify : Swift.Bool"
+                  moduleName = "Blossom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sydniechau/Desktop/code/Blossom/Blossom/ImagePicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390 - 1d49bb48a9eec91b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Blossom.ImagePickerCoordinator.isShown.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Blossom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sydniechau/Desktop/code/Blossom/Blossom/ImagePicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "67C26EB9-465D-4397-BFF3-D042BAFE0390 - a97002508f63953"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Blossom.ImagePickerCoordinator.$isShown.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Blossom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sydniechau/Desktop/code/Blossom/Blossom/ImagePicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "291">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

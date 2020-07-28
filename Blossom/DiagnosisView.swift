@@ -14,7 +14,7 @@ struct DiagnosisView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
-    @State private var identified: String = "unknown flower"
+    @State private var identified: String = "unknown diagnosis"
 
     var body: some View {
         NavigationView{

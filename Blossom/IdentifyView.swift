@@ -20,6 +20,7 @@ struct IdentifyView: View {
     var body: some View {
         NavigationView{
             VStack{
+                NavigationLink(destination: IdentifyResultView(identified: self.$identified)) { Text("View Result") }.background(Color.green).cornerRadius(5)
                 Image(uiImage: image ?? UIImage(named: "placeholder")!)
                     .resizable()
                     .frame(width:300, height : 300)
