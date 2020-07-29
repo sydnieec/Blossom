@@ -16,11 +16,13 @@ struct IdentifyView: View {
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
     @State private var identified: String = "unknown flower"
+    @State private var plantIndex: Int = 0
+
 
     var body: some View {
         NavigationView{
             VStack{
-                NavigationLink(destination: IdentifyResultView(identified: self.$identified)) { Text("View Result") }.background(Color.green).cornerRadius(5)
+                NavigationLink(destination: IdentifyResultView(identified: self.$identified, plantIndex: self.$plantIndex)) { Text("View Result") }.background(Color.green).cornerRadius(5)
                 Image(uiImage: image ?? UIImage(named: "placeholder")!)
                     .resizable()
                     .frame(width:300, height : 300)
@@ -43,6 +45,19 @@ struct IdentifyView: View {
                     }else{
                     self.resizedimage = resizeimage(self.image!)
                      self.identified = makeAPICall(data: self.resizedimage?.pngData() ?? Data())
+                        //get a index according to the flower obtained
+                        if self.identified == "aloe"{
+                            self.plantIndex = 0
+                        }
+                        else if self.identified == "Kalanchoe"{
+                            self.plantIndex = 1
+                        }else if self.identified == "cactus"{
+                            self.plantIndex = 2
+                        }else if self.identified == "orchids"{
+                            self.plantIndex = 3
+                        }else if self.identified == "peace lily"{
+                            self.plantIndex = 4
+                        }
 //                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data(), identified: self.identified )
 
                     }
