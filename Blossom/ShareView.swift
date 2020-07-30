@@ -7,11 +7,21 @@
 //
 
 import SwiftUI
-
+import MapKit
 struct ShareView: View {
+    @ObservedObject private var locationManager = LocationManager()
     var body: some View {
-        Text("share view")
-            .font(.title)
+        let coordinate = self.locationManager.location != nil
+                   ? self.locationManager.location!.coordinate :
+                   CLLocationCoordinate2D()
+        return ZStack{
+            MapView()
+            Text("\(coordinate.latitude), \(coordinate.longitude)")
+                .foregroundColor(Color.white)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+        }
     }
 }
 

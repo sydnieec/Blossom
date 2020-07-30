@@ -7,11 +7,15 @@
 //
 
 import SwiftUI
-
+import MapKit
 struct ContentView: View {
     @State private var selection = 0
- 
+    //observed if any time location manager throws a new value, body will be rerendered
+//    @ObservedObject private var locationManager = LocationManager()
     var body: some View {
+//        let coordinate = self.locationManager.location != nil
+//            ? self.locationManager.location!.coordinate :
+//            CLLocationCoordinate2D()
         TabView(selection: $selection){
             DiagnosisView()
                 .tabItem {
