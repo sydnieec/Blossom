@@ -1,4 +1,12 @@
 //
+//  MeResultView.swift
+//  Blossom
+//
+//  Created by Sydnie Chau on 2020-08-17.
+//  Copyright © 2020 Sydnie Chau. All rights reserved.
+//
+
+//
 //  IdentifyResultView.swift
 //  Blossom
 //
@@ -10,7 +18,7 @@ import SwiftUI
 
 
 
-struct IdentifyResultView: View {
+struct MeResultView: View {
         @Binding var identified : String
         @Binding var plantIndex : Int
         @EnvironmentObject var settings: UserSettings
@@ -25,13 +33,7 @@ struct IdentifyResultView: View {
        "3.Peace lilies are sensitive to chemicals commonly found in tap water, such as fluoride, which may cause brown leaf tips. Use filtered, room-temperature water, if possible.",
        "4.Peace lilies enjoy high humidity. Misting their leaves or placing their pot atop a moistened tray of gravel can help to increase humidity. "
     ]
-    @State var showAlert = false
-    @State var alertsuccess : String = ""
-
     
-    var alert : Alert{
-        Alert(title: Text("Added to Garden"), message: nil, dismissButton: .default(Text("Cancel")))
-    }
     var body: some View {
         List {
             HStack{
@@ -58,20 +60,13 @@ struct IdentifyResultView: View {
                     Text(careTipsArray[plantIndex*4+2])
                     Text(careTipsArray[plantIndex*4+3])
                     Button(action: {
-                        if !self.settings.gardenId.contains(self.plantIndex){
-                           self.settings.gardenNames.append(self.identified)
-                           self.settings.gardenId.append(self.plantIndex)
-                           self.showAlert = true
-                           self.alertsuccess = "Added to garden"
-                        }else{
-                            self.showAlert = true
-                            self.alertsuccess = "This is already in you garden"
+                        self.settings.gardenId = self.settings.gardenId .filter(){$0 != self.plantIndex}
+                        self.settings.gardenNames = self.settings.gardenNames.filter(){$0 != self.identified}
                         }
-                       
-                   }) {
-                   Text("Add to my garden")
-                    }.foregroundColor(Color.blue)
-                        .alert(isPresented: $showAlert) {Alert(title: Text(alertsuccess), message: nil, dismissButton: .default(Text("Ok")))}
+
+                   ) {
+                   Text("Delete from my garden")
+                    }.foregroundColor(Color.red)
 
                     
                     
@@ -80,21 +75,12 @@ struct IdentifyResultView: View {
             }
         }
     }
-    
-
 }
 
-struct IdentifyResultView_Previews: PreviewProvider {
+struct MeResultView_Previews: PreviewProvider {
     static var previews: some View {
-        IdentifyResultView(identified: .constant("Plant Name"), plantIndex: .constant(0))
+        MeResultView(identified: .constant("Plant Name"), plantIndex: .constant(0))
     }
 }
 
-func getPlantIndex(identified: String) -> Int {
-    if identified == "Kalanchoe"{
-        return 1
-    }else {
-        return 2
-    }
-}
 

@@ -25,7 +25,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            //to let classes access user garden
+            var settings = UserSettings()
+            window.rootViewController = UIHostingController(rootView: ContentView().environmentObject(settings))
+            
             self.window = window
             window.makeKeyAndVisible()
         }

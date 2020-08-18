@@ -15,11 +15,14 @@ struct DiagnosisView: View {
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
     @State private var identified: String = "unknown diagnosis"
+    @State private var diagnosisIndex: Int = 0
+    
+    @EnvironmentObject var settings: UserSettings
 
     var body: some View {
         NavigationView{
                     VStack{
-                        NavigationLink(destination: DiagnosisResultView(identified: self.$identified)) { Text("View Result") }.background(Color.green).cornerRadius(5)
+                        NavigationLink(destination: DiagnosisResultView(identified: self.$identified, diagnosisIndex: self.$diagnosisIndex )) { Text("View Result") }.background(Color.green).cornerRadius(5)
                         Image(uiImage: image ?? UIImage(named: "placeholder")!)
                             .resizable()
                             .frame(width:300, height : 300)
@@ -43,6 +46,14 @@ struct DiagnosisView: View {
                             }else{
                             self.resizedimage = resizeimage(self.image!)
                              self.identified = makeAPICallIdentify(data: self.resizedimage?.pngData() ?? Data())
+                            if self.identified == "overwatered"{
+                                self.diagnosisIndex = 0
+                            }else{
+                                self.diagnosisIndex = 1
+                                }
+                                self.settings.gardenHistory.append(self.identified)
+                                self.settings.gardenHistoryId.append(self.diagnosisIndex)
+
         //                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data(), identified: self.identified )
 
                             }
