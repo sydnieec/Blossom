@@ -14,7 +14,7 @@ struct MeView: View {
         NavigationView{
             VStack{
         List{
-            ForEach(0 ..< self.settings.gardenNames.count)
+            ForEach(1 ..< self.settings.gardenNames.count)
             {index in
 //                Text(self.settings.gardenNames[index])
 //                Text(self.settings.gardenId[index])
@@ -33,7 +33,7 @@ struct MeView: View {
                .fontWeight(.heavy)
                .foregroundColor(Color.green)
             List{
-                ForEach(0 ..< self.settings.gardenHistory.count)
+                ForEach(1 ..< self.settings.gardenHistory.count)
                     {index in
                         NavigationLink(destination: DiagnosisResultView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be  \(self.settings.gardenHistory[index])") }
 

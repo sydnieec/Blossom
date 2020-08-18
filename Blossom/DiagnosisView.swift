@@ -46,9 +46,11 @@ struct DiagnosisView: View {
                             }else{
                             self.resizedimage = resizeimage(self.image!)
                              self.identified = makeAPICallIdentify(data: self.resizedimage?.pngData() ?? Data())
-                            if self.identified == "overwatered"{
+                            if self.identified == "overwater"{
+                                self.identified="Overwatered"
                                 self.diagnosisIndex = 0
                             }else{
+                                self.identified="Underwated"
                                 self.diagnosisIndex = 1
                                 }
                                 self.settings.gardenHistory.append(self.identified)
