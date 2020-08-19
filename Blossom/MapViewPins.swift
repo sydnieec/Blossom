@@ -9,9 +9,8 @@ import MapKit
 import SwiftUI
 
 struct MapViewPins: UIViewRepresentable {
-    @Binding var centerCoordinate: CLLocationCoordinate2D
-    @Binding var selectedPlace: MKPointAnnotation?
-    @Binding var showingPlaceDetails: Bool
+    @EnvironmentObject var settings: UserSettings
+    @Binding  var selectedPlace: MKPointAnnotation?
     var annotations: [MKPointAnnotation]
 
     func makeUIView(context: Context) -> MKMapView {
@@ -21,9 +20,9 @@ struct MapViewPins: UIViewRepresentable {
         return mapView
     }
    func updateUIView(_ view: MKMapView, context: Context) {
-        if annotations.count != view.annotations.count {
+    if annotations.count != view.annotations.count {
             view.removeAnnotations(view.annotations)
-            view.addAnnotations(annotations)
+        view.addAnnotations(annotations)
         }
     }
    
@@ -40,7 +39,7 @@ struct MapViewPins: UIViewRepresentable {
         }
         
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-            parent.centerCoordinate = mapView.centerCoordinate
+            parent.settings.centerCoordinate = mapView.centerCoordinate
         }
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             // this is our unique identifier for view reuse
@@ -69,7 +68,7 @@ struct MapViewPins: UIViewRepresentable {
             guard let placemark = view.annotation as? MKPointAnnotation else { return }
 
             parent.selectedPlace = placemark
-            parent.showingPlaceDetails = true
+            parent.settings.showingPlaceDetails = true
         }
         //function to zoom onto user location upon opening screen
         func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
@@ -97,7 +96,7 @@ extension MKPointAnnotation {
 
 struct MapViewPins_Previews: PreviewProvider {
     static var previews: some View {
-        MapViewPins(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), selectedPlace: .constant(MKPointAnnotation.example), showingPlaceDetails: .constant(false), annotations: [MKPointAnnotation.example])
+        MapViewPins(selectedPlace: .constant(MKPointAnnotation.example), annotations: [MKPointAnnotation.example])
 
     }
 }

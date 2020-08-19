@@ -69,9 +69,10 @@ struct IdentifyResultView: View {
                                           self.settings.gardenNames.append(self.identified)
                                           self.settings.gardenId.append(self.plantIndex)
                                         //add to annotations list for map
-//                                        let newLocation = MKPointAnnotation()
-//                                        newLocation.coordinate = coordinate
-//                                        self.locations.append(newLocation)
+                                        let newLocation = MKPointAnnotation()
+                                        newLocation.title = self.identified
+                                        newLocation.coordinate = coordinate
+                                        self.settings.locations.append(newLocation)
                                         
                                           self.showAlert = true
                                           self.alertsuccess = "Added to your garden and map"

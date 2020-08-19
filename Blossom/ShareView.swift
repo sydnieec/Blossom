@@ -9,15 +9,15 @@
 import SwiftUI
 import MapKit
 struct ShareView: View {
-    @State private var centerCoordinate = CLLocationCoordinate2D()
-    @State private var locations = [MKPointAnnotation]()
+//    @State private var centerCoordinate = CLLocationCoordinate2D()
+//    @State private var locations = [MKPointAnnotation]()
     @State private var selectedPlace: MKPointAnnotation?
-    @State private var showingPlaceDetails = false
-
+//   @State private var showingPlaceDetails = false
+    @EnvironmentObject var settings: UserSettings
 //    code for MapViewPins.swift
     var body : some View {
          ZStack {
-            MapViewPins(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
+            MapViewPins( selectedPlace: $selectedPlace, annotations: settings.locations)
                  .edgesIgnoringSafeArea(.all)
 //            MapView()
              Circle()
@@ -31,8 +31,8 @@ struct ShareView: View {
                     Button(action: {
                        let newLocation = MKPointAnnotation()
                         newLocation.title = "Example location"
-                        newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
+                        newLocation.coordinate = self.settings.centerCoordinate
+                        self.settings.locations.append(newLocation)
                     }) {
                         Image(systemName: "plus")
                     }
@@ -45,7 +45,7 @@ struct ShareView: View {
                 }
             }
          }
-        .alert(isPresented: $showingPlaceDetails) {
+         .alert(isPresented: self.$settings.showingPlaceDetails) {
             Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information."), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
                 // edit this place
             })
