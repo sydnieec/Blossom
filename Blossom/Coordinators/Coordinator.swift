@@ -18,6 +18,18 @@ final class Coordinator: NSObject, MKMapViewDelegate{
         
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifer = "Placemark"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifer)
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifer)
+            annotationView?.canShowCallout = true
+            annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }else {
+            annotationView?.annotation = annotation
+        }
+        return annotationView
+    }
     
     //function to zoom onto user location upon opening screen
     func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {

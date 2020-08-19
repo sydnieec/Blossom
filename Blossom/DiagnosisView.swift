@@ -50,7 +50,7 @@ struct DiagnosisView: View {
                                 self.identified="Overwatered"
                                 self.diagnosisIndex = 0
                             }else{
-                                self.identified="Underwated"
+                                self.identified="Underwatered"
                                 self.diagnosisIndex = 1
                                 }
                                 self.settings.gardenHistory.append(self.identified)

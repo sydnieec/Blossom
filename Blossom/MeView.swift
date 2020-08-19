@@ -35,7 +35,7 @@ struct MeView: View {
             List{
                 ForEach(1 ..< self.settings.gardenHistory.count)
                     {index in
-                        NavigationLink(destination: DiagnosisResultView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be  \(self.settings.gardenHistory[index])") }
+                        NavigationLink(destination: DiagnosisResultView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be \(self.settings.gardenHistory[index])") }
 
 
 
