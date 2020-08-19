@@ -7,10 +7,13 @@
 //
 
 import SwiftUI
+import MapKit
 
 
 
 struct IdentifyResultView: View {
+        //to get current locations 
+        @ObservedObject private var locationManager = LocationManager()
         @Binding var identified : String
         @Binding var plantIndex : Int
         @EnvironmentObject var settings: UserSettings
@@ -33,56 +36,69 @@ struct IdentifyResultView: View {
         Alert(title: Text("Added to Garden"), message: nil, dismissButton: .default(Text("Cancel")))
     }
     var body: some View {
-        List {
-            HStack{
-                VStack{
-                    Text(identified)
-                        .font(.largeTitle)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.green)
-                        .multilineTextAlignment(.center)
-                    Text("Description")
+        let coordinate = self.locationManager.location != nil
+                       ? self.locationManager.location!.coordinate :
+                       CLLocationCoordinate2D()
+        return VStack{
+                        // Text("\(coordinate.latitude), \(coordinate.longitude)")
+                        Text(identified)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.green)
+                            .multilineTextAlignment(.center)
+                        Text("Description")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                        Text(descriptionArray[plantIndex])
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical)
+                        Text("Charateristics")
                         .font(.title)
                         .fontWeight(.semibold)
-                    Text(descriptionArray[plantIndex])
-                        .multilineTextAlignment(.center)
-                        .padding(.vertical)
-                    Text("Charateristics")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    Text("Care Tips")
-                    .font(.title)
-                        .fontWeight(.semibold)
-                    Text(careTipsArray[plantIndex*4])
-                    Text(careTipsArray[plantIndex*4+1])
-                    Text(careTipsArray[plantIndex*4+2])
-                    Text(careTipsArray[plantIndex*4+3])
-                    Button(action: {
-                        if !self.settings.gardenId.contains(self.plantIndex){
-                           self.settings.gardenNames.append(self.identified)
-                           self.settings.gardenId.append(self.plantIndex)
-                           self.showAlert = true
-                           self.alertsuccess = "Added to garden"
-                        }else{
-                            self.showAlert = true
-                            self.alertsuccess = "This is already in you garden"
-                        }
-                       
-                   }) {
-                   Text("Add to my garden")
-                    }.foregroundColor(Color.blue)
-                        .alert(isPresented: $showAlert) {Alert(title: Text(alertsuccess), message: nil, dismissButton: .default(Text("Ok")))}
-
-                    
-                    
-                }
-                Spacer()
+                        Text("Care Tips")
+                        .font(.title)
+                            .fontWeight(.semibold)
+                        Text(careTipsArray[plantIndex*4])
+                        Text(careTipsArray[plantIndex*4+1])
+                        Text(careTipsArray[plantIndex*4+2])
+                        Text(careTipsArray[plantIndex*4+3])
+                        
+                            Button(action: {
+                                       if !self.settings.gardenId.contains(self.plantIndex){
+                                        //add to global variable list in usersettings
+                                          self.settings.gardenNames.append(self.identified)
+                                          self.settings.gardenId.append(self.plantIndex)
+                                        //add to annotations list for map
+//                                        let newLocation = MKPointAnnotation()
+//                                        newLocation.coordinate = coordinate
+//                                        self.locations.append(newLocation)
+                                        
+                                          self.showAlert = true
+                                          self.alertsuccess = "Added to your garden and map"
+                                       }else{
+                                           self.showAlert = true
+                                           self.alertsuccess = "This plant is registered"
+                                       }
+                                      
+                                  }) {
+                                  Text("Add to my profile")
+                                   }.foregroundColor(Color.blue)
+                                       .alert(isPresented: $showAlert) {Alert(title: Text(alertsuccess), message: nil, dismissButton: .default(Text("Ok")))}
+                            
+                        
+                        
+            
             }
         }
+                
+                
+                
+            
+        
     }
     
 
-}
+
 
 struct IdentifyResultView_Previews: PreviewProvider {
     static var previews: some View {

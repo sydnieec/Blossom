@@ -14,10 +14,12 @@ struct ShareView: View {
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
 
+//    code for MapViewPins.swift
     var body : some View {
          ZStack {
             MapViewPins(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
                  .edgesIgnoringSafeArea(.all)
+//            MapView()
              Circle()
                  .fill(Color.blue)
                  .opacity(0.3)
@@ -56,11 +58,11 @@ struct ShareView: View {
 //                   CLLocationCoordinate2D()
 //        return ZStack{
 //            MapView()
-//            Text("\(coordinate.latitude), \(coordinate.longitude)")
-//                .foregroundColor(Color.white)
-//                .padding()
-//                .background(Color.green)
-//                .cornerRadius(10)
+////            Text("\(coordinate.latitude), \(coordinate.longitude)")
+////                .foregroundColor(Color.white)
+////                .padding()
+////                .background(Color.green)
+////                .cornerRadius(10)
 //        }
 //    }
 }

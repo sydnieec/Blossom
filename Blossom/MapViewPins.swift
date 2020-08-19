@@ -16,6 +16,7 @@ struct MapViewPins: UIViewRepresentable {
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
+        mapView.showsUserLocation = true
         mapView.delegate = context.coordinator
         return mapView
     }
@@ -69,6 +70,18 @@ struct MapViewPins: UIViewRepresentable {
 
             parent.selectedPlace = placemark
             parent.showingPlaceDetails = true
+        }
+        //function to zoom onto user location upon opening screen
+        func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+            if let annotationView = views.first{
+                if let annotation = annotationView.annotation{
+                    //checks if user location
+                    if annotation is MKUserLocation{
+                        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+                        mapView.setRegion(region, animated: true)
+                    }
+                }
+            }
         }
     }
 }
