@@ -37,7 +37,7 @@ struct ContentView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
-                        Text("Share")
+                        Text("Map")
                     }
                 }
                 .tag(2)

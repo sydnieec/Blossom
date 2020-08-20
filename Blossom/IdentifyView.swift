@@ -16,7 +16,7 @@ struct IdentifyView: View {
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
     @State private var identified: String = "unknown flower"
-    @State private var plantIndex: Int = 0
+    @State private var plantIndex: String = "0"
 
 
     var body: some View {
@@ -47,16 +47,16 @@ struct IdentifyView: View {
                      self.identified = makeAPICall(data: self.resizedimage?.pngData() ?? Data())
                         //get a index according to the flower obtained
                         if self.identified == "aloe"{
-                            self.plantIndex = 0
+                            self.plantIndex = "0"
                         }
                         else if self.identified == "Kalanchoe"{
-                            self.plantIndex = 1
+                            self.plantIndex = "1"
                         }else if self.identified == "cactus"{
-                            self.plantIndex = 2
+                            self.plantIndex = "2"
                         }else if self.identified == "orchids"{
-                            self.plantIndex = 3
+                            self.plantIndex = "3"
                         }else if self.identified == "peace lily"{
-                            self.plantIndex = 4
+                            self.plantIndex = "4"
                         }
 //                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data(), identified: self.identified )
 

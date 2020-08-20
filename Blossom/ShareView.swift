@@ -26,26 +26,26 @@ struct ShareView: View {
                  .fill(Color.blue)
                  .opacity(0.3)
                  .frame(width: 32, height: 32)
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: {
-                       let newLocation = MKPointAnnotation()
-                        newLocation.title = "Example location"
-                        newLocation.coordinate = self.settings.centerCoordinate
-                        self.settings.locations.append(newLocation)
-                    }) {
-                        Image(systemName: "plus")
-                    }
-                    .padding()
-                    .background(Color.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                    .padding(.trailing)
-                }
-            }
+//            VStack {
+//                Spacer()
+//                HStack {
+//                    Spacer()
+//                    Button(action: {
+//                       let newLocation = MKPointAnnotation()
+//                        newLocation.title = "Example location"
+//                        newLocation.coordinate = self.settings.centerCoordinate
+//                        self.settings.locations.append(newLocation)
+//                    }) {
+//                        Image(systemName: "plus")
+//                    }
+//                    .padding()
+//                    .background(Color.black.opacity(0.75))
+//                    .foregroundColor(.white)
+//                    .font(.title)
+//                    .clipShape(Circle())
+//                    .padding(.trailing)
+//                }
+//            }
                 VStack{
                     
                     Spacer()
@@ -120,15 +120,17 @@ struct CustomActionSheet : View {
     @EnvironmentObject var settings: UserSettings
 
     @Binding var selectedPlace: MKPointAnnotation?
-    @State private var diagnosisIndex: Int = 0
+    @State private var diagnosisIndex: String = "0"
 
     var body : some View{
-        
         VStack(spacing: 15){
             NavigationView{
                 VStack{
                 Text(selectedPlace?.title ?? "Unknown")
-                    NavigationLink(destination: IdentifyResultView(identified: .constant(selectedPlace?.title ?? "SDF"), plantIndex: self.$diagnosisIndex)) { Text("More Information") }.background(Color.green).cornerRadius(5)
+                Text(selectedPlace?.subtitle ?? "Unknown")
+
+                    NavigationLink(destination: IdentifyResultView(identified: .constant(selectedPlace?.title ?? "Could not get info"), plantIndex: .constant(selectedPlace?.subtitle ?? self.diagnosisIndex)))
+                    { Text("More Information") }.background(Color.green).cornerRadius(5)
                 }
                 
             }
