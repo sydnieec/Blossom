@@ -21,6 +21,7 @@ import MapKit
     @Published  var centerCoordinate = CLLocationCoordinate2D()
     @Published  var locations = [MKPointAnnotation]()
     @Published var showingPlaceDetails = false
+    @Published var offset : CGFloat = UIScreen.main.bounds.height
 
 
  }
