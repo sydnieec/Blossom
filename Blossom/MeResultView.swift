@@ -59,14 +59,14 @@ struct MeResultView: View {
                     Text(careTipsArray[plantIndex*4+1])
                     Text(careTipsArray[plantIndex*4+2])
                     Text(careTipsArray[plantIndex*4+3])
-                    Button(action: {
-                        self.settings.gardenId = self.settings.gardenId .filter(){$0 != self.plantIndex}
-                        self.settings.gardenNames = self.settings.gardenNames.filter(){$0 != self.identified}
-                        }
-
-                   ) {
-                   Text("Delete from my garden")
-                    }.foregroundColor(Color.red)
+//                    Button(action: {
+//                        self.settings.gardenId = self.settings.gardenId .filter(){$0 != self.plantIndex}
+//                        self.settings.gardenNames = self.settings.gardenNames.filter(){$0 != self.identified}
+//                        }
+//
+//                   ) {
+//                   Text("Delete from my garden")
+//                    }.foregroundColor(Color.red)
 
                     
                     
