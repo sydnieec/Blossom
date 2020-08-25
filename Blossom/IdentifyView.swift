@@ -15,20 +15,32 @@ struct IdentifyView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
-    @State private var identified: String = "unknown flower"
+    @State private var identified: String = "Please select an image and then begin identifying "
     @State private var plantIndex: String = "0"
-
 
     var body: some View {
         NavigationView{
             VStack{
-                NavigationLink(destination: IdentifyResultView(identified: self.$identified, plantIndex: self.$plantIndex)) { Text("View Result") }.background(Color.green).cornerRadius(5)
+                Spacer()
+                Spacer()
                 Image(uiImage: image ?? UIImage(named: "placeholder")!)
                     .resizable()
-                    .frame(width:300, height : 300)
-                Button("choose picture"){
+                    .frame(width:250, height : 250)
+                    .cornerRadius(50)
+                    .overlay(RoundedRectangle(cornerRadius: 50)
+                     .stroke(Color(red: 21/225, green: 132/255, blue: 103/255), lineWidth: 4))
+                Text(self.identified)
+                if (self.identified != "Please select an image and then begin identifying " && self.identified != "Please Select an image"){
+                           NavigationLink(destination: IdentifyResultView(identified: self.$identified, plantIndex: self.$plantIndex)) { Text("More info") }
+                    }
+                Spacer()
+                Button("Choose a picture"){
                     self.showSheet=true
                 }.padding()
+                .background(Color(red: 21/225, green: 132/255, blue: 103/255))
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+                .frame(maxWidth: .infinity)
                     .actionSheet(isPresented: $showSheet){
                         ActionSheet(title: Text("Select Photo"),
                                     message :Text("Choose"), buttons: [.default(Text("Photo Library")){
@@ -62,12 +74,19 @@ struct IdentifyView: View {
 
                     }
                 }) {
-                    Text("Identify ")
-                }
+                    Text("Start Identifying ")
+                    }.padding()
+                    .background(Color(red: 21/225, green: 132/255, blue: 103/255))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(10)
+                    .frame(minWidth: 200, minHeight: 100)
+                
+                Spacer()
+                Spacer()
             
-                Text(self.identified)
             }
             .navigationBarTitle("Identify")
+            .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255))
         }.sheet(isPresented: $showImagePicker){
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
         }

@@ -14,7 +14,7 @@ struct DiagnosisView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
-    @State private var identified: String = "unknown diagnosis"
+    @State private var identified: String = "Please select a image to start and begin diagnosis"
     @State private var diagnosisIndex: Int = 0
     
     @EnvironmentObject var settings: UserSettings
@@ -22,13 +22,28 @@ struct DiagnosisView: View {
     var body: some View {
         NavigationView{
                     VStack{
-                        NavigationLink(destination: DiagnosisResultView(identified: self.$identified, diagnosisIndex: self.$diagnosisIndex )) { Text("View Result") }.background(Color.green).cornerRadius(5)
-                        Image(uiImage: image ?? UIImage(named: "placeholder")!)
+                        Spacer()
+                        Spacer()
+                        Image(uiImage: image ?? UIImage(named: "healthPlaceHolder")!)
                             .resizable()
-                            .frame(width:300, height : 300)
-                        Button("choose picture"){
+                            .overlay(RoundedRectangle(cornerRadius: 50)
+                                                       .stroke(Color(red: 21/225, green: 132/255, blue: 103/255), lineWidth: 4))
+                            .frame(width:250, height : 250)
+                            .cornerRadius(50)
+                          
+                        Text(self.identified)
+                        if (self.identified != "Please select a image to start and begin diagnosis" && self.identified != "Please Select an image" ){
+                                            NavigationLink(destination: DiagnosisResultView(identified: self.$identified, diagnosisIndex: self.$diagnosisIndex )) { Text("More information") }
+                        }
+                        Spacer()
+
+                        Button("Choose a picture"){
                             self.showSheet=true
                         }.padding()
+                        .background(Color(red: 21/225, green: 132/255, blue: 103/255))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(10)
+                        .frame(maxWidth: .infinity)
                             .actionSheet(isPresented: $showSheet){
                                 ActionSheet(title: Text("Select Photo"),
                                             message :Text("Choose"), buttons: [.default(Text("Photo Library")){
@@ -60,19 +75,25 @@ struct DiagnosisView: View {
 
                             }
                         }) {
-                            Text("Identify ")
-                        }
+                            Text("Start Diagnosis ")
+                            }.padding()
+                            .background(Color(red: 21/225, green: 132/255, blue: 103/255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
+                            .frame(maxWidth: .infinity)
+                            .frame(minWidth: 200, minHeight: 100)
+                    Spacer()
+                    Spacer()
                     
-                        Text(self.identified)
                     }
-
                     .navigationBarTitle("Diagnosis")
-                }.sheet(isPresented: $showImagePicker){
+            
+                }.background(Color.red)
+        .sheet(isPresented: $showImagePicker){
                     ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
                 }
-                
-        
     }
+
 
 }
 
