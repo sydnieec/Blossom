@@ -122,18 +122,20 @@ struct CustomActionSheet : View {
     @Binding var selectedPlace: MKPointAnnotation?
     @State private var diagnosisIndex: String = "0"
 
+
     var body : some View{
         VStack(spacing: 15){
-            NavigationView{
-                VStack{
-                Text(selectedPlace?.title ?? "Unknown")
-                Text(selectedPlace?.subtitle ?? "Unknown")
-
-                    NavigationLink(destination: IdentifyResultView(identified: .constant(selectedPlace?.title ?? "Could not get info"), plantIndex: .constant(selectedPlace?.subtitle ?? self.diagnosisIndex)))
-                    { Text("More Information") }.background(Color.green).cornerRadius(5)
-                }
+            IdentifyResultView(identified: .constant(selectedPlace?.title ?? "Could not get info"), plantIndex: .constant(selectedPlace?.subtitle ?? self.diagnosisIndex), hiddenButton: .constant("yes"))
+//            NavigationView{
+//                VStack{
+//                Text(selectedPlace?.title ?? "Unknown")
+////                Text(selectedPlace?.subtitle ?? "Unknown")
+//
+//                    NavigationLink(destination: IdentifyResultView(identified: .constant(selectedPlace?.title ?? "Could not get info"), plantIndex: .constant(selectedPlace?.subtitle ?? self.diagnosisIndex)))
+//                    { Text("More Information") }.background(Color.green).cornerRadius(5)
+//                }
                 
-            }
+            
 
 
             

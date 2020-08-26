@@ -36,6 +36,7 @@ struct MeResultView: View {
     
     var body: some View {
         List {
+            Spacer()
             HStack{
                 VStack{
                     Text(identified)
@@ -43,22 +44,28 @@ struct MeResultView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(Color.green)
                         .multilineTextAlignment(.center)
+                        .padding()
                     Text("Description")
                         .font(.title)
                         .fontWeight(.semibold)
                     Text(descriptionArray[plantIndex])
                         .multilineTextAlignment(.center)
                         .padding(.vertical)
-                    Text("Charateristics")
-                    .font(.title)
-                    .fontWeight(.semibold)
+//                    Text("Charateristics")
+//                    .font(.title)
+//                    .fontWeight(.semibold)
                     Text("Care Tips")
                     .font(.title)
                         .fontWeight(.semibold)
                     Text(careTipsArray[plantIndex*4])
+                        .padding(.top)
                     Text(careTipsArray[plantIndex*4+1])
+                        .padding(.top)
                     Text(careTipsArray[plantIndex*4+2])
+                        .padding(.top)
                     Text(careTipsArray[plantIndex*4+3])
+                        .padding(.top)
+
 //                    Button(action: {
 //                        self.settings.gardenId = self.settings.gardenId .filter(){$0 != self.plantIndex}
 //                        self.settings.gardenNames = self.settings.gardenNames.filter(){$0 != self.identified}
@@ -71,7 +78,6 @@ struct MeResultView: View {
                     
                     
                 }
-                Spacer()
             }
         }
     }

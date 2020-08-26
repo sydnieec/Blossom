@@ -14,7 +14,7 @@ struct DiagnosisView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
-    @State private var identified: String = "Please select a image to start and begin diagnosis"
+    @State private var identified: String = "Please select a image to start"
     @State private var diagnosisIndex: Int = 0
     
     @EnvironmentObject var settings: UserSettings
@@ -26,13 +26,13 @@ struct DiagnosisView: View {
                         Spacer()
                         Image(uiImage: image ?? UIImage(named: "healthPlaceHolder")!)
                             .resizable()
-                            .overlay(RoundedRectangle(cornerRadius: 50)
-                                                       .stroke(Color(red: 21/225, green: 132/255, blue: 103/255), lineWidth: 4))
                             .frame(width:250, height : 250)
                             .cornerRadius(50)
+                            .overlay(RoundedRectangle(cornerRadius: 50)
+                                                                   .stroke(Color(red: 21/225, green: 132/255, blue: 103/255), lineWidth: 4))
                           
                         Text(self.identified)
-                        if (self.identified != "Please select a image to start and begin diagnosis" && self.identified != "Please Select an image" ){
+                        if (self.identified ==  "Please select a image to start" && self.identified != "Please Select an image" ){
                                             NavigationLink(destination: DiagnosisResultView(identified: self.$identified, diagnosisIndex: self.$diagnosisIndex )) { Text("More information") }
                         }
                         Spacer()
@@ -68,9 +68,7 @@ struct DiagnosisView: View {
                                 self.identified="Underwatered"
                                 self.diagnosisIndex = 1
                                 }
-                                self.settings.gardenHistory.append(self.identified)
-                                self.settings.gardenHistoryId.append(self.diagnosisIndex)
-
+                             
         //                    self.identified = sendPostRequest(data: self.resizedimage?.pngData() ?? Data(), identified: self.identified )
 
                             }
@@ -88,7 +86,7 @@ struct DiagnosisView: View {
                     }
                     .navigationBarTitle("Diagnosis")
             
-                }.background(Color.red)
+                }
         .sheet(isPresented: $showImagePicker){
                     ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
                 }

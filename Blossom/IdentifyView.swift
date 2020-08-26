@@ -15,8 +15,9 @@ struct IdentifyView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image : UIImage?
     @State private var resizedimage : UIImage?
-    @State private var identified: String = "Please select an image and then begin identifying "
+    @State private var identified: String = "Please select an image to start "
     @State private var plantIndex: String = "0"
+    @State private var hiddenButtonBool: String = "no"
 
     var body: some View {
         NavigationView{
@@ -30,8 +31,9 @@ struct IdentifyView: View {
                     .overlay(RoundedRectangle(cornerRadius: 50)
                      .stroke(Color(red: 21/225, green: 132/255, blue: 103/255), lineWidth: 4))
                 Text(self.identified)
-                if (self.identified != "Please select an image and then begin identifying " && self.identified != "Please Select an image"){
-                           NavigationLink(destination: IdentifyResultView(identified: self.$identified, plantIndex: self.$plantIndex)) { Text("More info") }
+                if (self.identified ==  "Please select an image to start " && self.identified != "Please Select an image"){
+                    NavigationLink(destination: IdentifyResultView(identified: self.$identified, plantIndex: self.$plantIndex, hiddenButton: self.$hiddenButtonBool)) { Text("More info") }
+                            
                     }
                 Spacer()
                 Button("Choose a picture"){
@@ -86,7 +88,7 @@ struct IdentifyView: View {
             
             }
             .navigationBarTitle("Identify")
-            .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255))
+//            .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255))
         }.sheet(isPresented: $showImagePicker){
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
         }

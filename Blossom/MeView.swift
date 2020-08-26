@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MeView: View {
     @EnvironmentObject var settings: UserSettings
+    @State private var hiddenButtonBool: String = "yes"
     var body: some View {
         NavigationView{
             VStack{
@@ -23,7 +24,7 @@ struct MeView: View {
 ////
                 NavigationLink(destination: MeResultView(identified: self.$settings.gardenNames[index], plantIndex: self.$settings.gardenId[index]) ) {   Text("\(self.settings.gardenNames[index])") }
 
-
+        
 
             }
             }
@@ -32,12 +33,12 @@ struct MeView: View {
                 .font(.largeTitle)
                .fontWeight(.heavy)
                .foregroundColor(Color.green)
+                .multilineTextAlignment(.leading)
             List{
                 ForEach(1 ..< self.settings.gardenHistory.count)
                     {index in
                         NavigationLink(destination: DiagnosisResultView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be \(self.settings.gardenHistory[index])") }
-
-
+               
 
                     }
                 }

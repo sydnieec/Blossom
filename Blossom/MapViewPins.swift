@@ -69,7 +69,7 @@ struct MapViewPins: UIViewRepresentable {
 
             parent.selectedPlace = placemark
 //            parent.settings.showingPlaceDetails = true
-            parent.settings.offset = 0 
+            parent.settings.offset = 10
         }
         //function to zoom onto user location upon opening screen
         func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
