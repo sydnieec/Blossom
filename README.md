@@ -2,7 +2,7 @@
 🌸A pocket garden as an IOS app! Visually recognise any plants or diagnose your plant's health by uploading a photo, and keep a collection of your plant history as well as special flowers you've seen around the world!
 
 
-You can find the link to the demo [here.](https://youtu.be/CeueAq2ABUA)
+You can find the link to the demo [here.](https://youtu.be/CeueAq2ABUA) (Please turn on captions!)
 
 <img width="475" alt="Screen Shot 2020-09-02 at 2 58 43 PM" src="https://user-images.githubusercontent.com/40672145/92024975-e2f0d780-ed2c-11ea-83f1-678ad667acb1.png">
 <img width="473" alt="Screen Shot 2020-09-02 at 2 58 49 PM" src="https://user-images.githubusercontent.com/40672145/92024979-e3896e00-ed2c-11ea-97b6-5116269146e8.png">
