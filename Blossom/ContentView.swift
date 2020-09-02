@@ -10,12 +10,7 @@ import SwiftUI
 import MapKit
 struct ContentView: View {
     @State private var selection = 0
-    //observed if any time location manager throws a new value, body will be rerendered
-//    @ObservedObject private var locationManager = LocationManager()
     var body: some View {
-//        let coordinate = self.locationManager.location != nil
-//            ? self.locationManager.location!.coordinate :
-//            CLLocationCoordinate2D()
         TabView(selection: $selection){
             DiagnosisView()
                 .tabItem {
@@ -23,32 +18,32 @@ struct ContentView: View {
                         Image(systemName: "heart")
                         Text("Diagnosis")
                     }
-                }
-                .tag(0)
+            }
+            .tag(0)
             IdentifyView()
                 .tabItem {
                     VStack {
                         Image(systemName: "camera")
                         Text("Identify")
                     }
-                }
-                .tag(1)
+            }
+            .tag(1)
             ShareView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
                         Text("Map")
                     }
-                }
-                .tag(2)
+            }
+            .tag(2)
             MeView()
-                         .tabItem {
-                             VStack {
-                                 Image(systemName: "person")
-                                 Text("Me")
-                             }
-                         }
-                         .tag(3)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person")
+                        Text("Me")
+                    }
+            }
+            .tag(3)
         }
     }
 }
@@ -56,7 +51,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        .previewDevice(PreviewDevice(rawValue: "iPhone XR"))
-
+            .previewDevice(PreviewDevice(rawValue: "iPhone XR"))
+        
     }
 }

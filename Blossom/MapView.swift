@@ -5,7 +5,8 @@
 //  Created by Sydnie Chau on 2020-07-30.
 //  Copyright © 2020 Sydnie Chau. All rights reserved.
 //
-
+//CURRENT FILE IS NOT IN USE AS IT IS REAPLCED BY MAPVIEWPINS
+//GOOD REFERENCE FOR MAPUI KIT 
 import SwiftUI
 import MapKit
 struct MapView: UIViewRepresentable {

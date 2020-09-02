@@ -28,7 +28,7 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
 }
 
 struct ImagePicker: UIViewControllerRepresentable {
-   typealias UIViewControllerType = UIImagePickerController
+    typealias UIViewControllerType = UIImagePickerController
     typealias Coordinator = ImagePickerCoordinator
     
     @Binding var image: UIImage?
@@ -49,9 +49,3 @@ struct ImagePicker: UIViewControllerRepresentable {
         return picker
     }
 }
-
-//struct ImagePicker_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ImagePicker()
-//    }
-//}

@@ -14,41 +14,49 @@ struct MeView: View {
     var body: some View {
         NavigationView{
             VStack{
-        List{
-            ForEach(1 ..< self.settings.gardenNames.count)
-            {index in
-//                Text(self.settings.gardenNames[index])
-//                Text(self.settings.gardenId[index])
-
-//                Text("\(self.settings.gardenNames[index])")
-////
-                NavigationLink(destination: MeResultView(identified: self.$settings.gardenNames[index], plantIndex: self.$settings.gardenId[index]) ) {   Text("\(self.settings.gardenNames[index])") }
-
-        
-
-            }
-            }
-            Spacer()
-            Text("Plant History")
-                .font(.largeTitle)
-               .fontWeight(.heavy)
-               .foregroundColor(Color.green)
-                .multilineTextAlignment(.leading)
-            List{
-                ForEach(1 ..< self.settings.gardenHistory.count)
+                HStack{
+                    Image(systemName: "tray")
+                        .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255)) .multilineTextAlignment(.leading)
+                        .font(.system(size: 30))
+                    
+                    Text("My Plants")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255)) .multilineTextAlignment(.leading)
+                }
+                
+                List{
+                    ForEach(1 ..< self.settings.gardenNames.count)
                     {index in
-                        NavigationLink(destination: DiagnosisResultView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be \(self.settings.gardenHistory[index])") }
-               
-
+                        
+                        NavigationLink(destination: MeResultView(identified: self.$settings.gardenNames[index], plantIndex: self.$settings.gardenId[index]) ) {   Text("\(self.settings.gardenNames[index])") }
+                        
+                    }
+                }
+                Spacer()
+                HStack{
+                    Image(systemName: "heart")
+                        .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255)) .multilineTextAlignment(.leading)
+                        .font(.system(size: 30))
+                    
+                    Text("Plant History")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(red: 21/225, green: 132/255, blue: 103/255)) .multilineTextAlignment(.leading)
+                }
+                List{
+                    ForEach(1 ..< self.settings.gardenHistory.count)
+                    {index in
+                        NavigationLink(destination: MeDiagnosisView(identified: self.$settings.gardenHistory[index], diagnosisIndex: self.$settings.gardenHistoryId[index]) ) {   Text("Your plant appeared to be \(self.settings.gardenHistory[index])") }
+                        
                     }
                 }
                 
-            }.navigationBarTitle("My Garden")
-              
+            }
+            
         }
-       
         
-
+        
     }
 }
 

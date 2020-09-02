@@ -10,10 +10,10 @@
 import Foundation
 import MapKit
 
- class UserSettings : ObservableObject{
+class UserSettings : ObservableObject{
     @Published var gardenNames : [String] = ["Kalanchoe"]
     @Published var gardenId : [Int] = [2]
-
+    
     @Published var gardenHistory : [String] = ["underwatered"]
     @Published var gardenHistoryId : [Int] = [0]
     
@@ -22,6 +22,6 @@ import MapKit
     @Published  var locations = [MKPointAnnotation]()
     @Published var showingPlaceDetails = false
     @Published var offset : CGFloat = UIScreen.main.bounds.height
-
-
- }
+    
+    
+}
