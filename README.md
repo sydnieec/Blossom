@@ -1,6 +1,5 @@
 # Blossom
-🌸Plant Identifier and Care App
- A pocket garden as an IOS app! Visually recognise any plants or diagnose your plant's health by uploading a photo, and keep a collection of your plant history as well as special flowers you've seen around the world!
+🌸A pocket garden as an IOS app! Visually recognise any plants or diagnose your plant's health by uploading a photo, and keep a collection of your plant history as well as special flowers you've seen around the world!
 
 
 You can find the link to the demo [here.](https://youtu.be/CeueAq2ABUA)
